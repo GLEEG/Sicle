@@ -13,7 +13,7 @@
 </head> 
 <body>
 
-        <div class="header centered">
+    <div class="header centered">
         <div class="logo">
             Sicle
         </div>
@@ -39,34 +39,42 @@
         <div class="canvas"></div>
     </div>
 
+    <!-- First section definition -->
     <div class="firstBlock centered">
+
+        <!-- Card definition -->
         <div class="card blue">
+
+            <!-- A RENOMMER TITLE OF DEFINITION / Name of word -->
             <div class="cardHeader">
+                <!-- A RENOMMER NAME OF WORD / Name of word -->
                 <div class="leftCardHeader">
                     <h1>DISCIPLINE</h1>
                     <p>n.f</p>
                 </div>
-                <div class="rightCardHeader">
-                    <img src="./assets/images/quote.svg" alt="quote">
-                </div>
+
+                <img src="./assets/images/quote.svg" alt="quote">
             </div>
 
+            <!-- A RENOMMER TEXT OF DEFINITION / Text of definition -->
             <div class="cardBody">
                 <p>Règle de conduite que l'on s'impose, maîtrise de soi, sens du devoir</p>
+                <br>
                 <p>Il s'astreint à une discipline alimentaire très stricte.</p>
             </div>
 
+            <!-- A RENOMMER LEGEND / Legend -->
             <div class="cardFooter">
                 <p>DÉFINITION</p>
             </div>
+            
         </div>
 
-        <div class="blockImg"></div>
+        <div class="blockImg cardImage"></div>
     </div>
 
     <div class="secondBlock centered">
-        <div class="packOfCard">
-            <div class="card leftCard"></div>
+            <div class="cardImage leftCard"></div>
             <div class="card midCard">
                 <div class="cardHeader">
                     <div class="leftCardHeader">
@@ -87,8 +95,7 @@
                     <p>DÉFINITION</p>
                 </div>
             </div>
-            <div class="card rightCard"></div>
-        </div>
+            <div class="cardImage rightCard"></div>
     </div>
 
     <div class="banner"></div>
