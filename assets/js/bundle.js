@@ -16,7 +16,7 @@
   \*******************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n\n\n//# sourceURL=webpack://php-webpack/./script.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n\r\nconsole.log(\"third\")\n\n//# sourceURL=webpack://php-webpack/./script.js?");
 
 /***/ })
 

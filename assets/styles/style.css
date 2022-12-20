@@ -1,4 +1,252 @@
-body
-{
+/* Fonts */
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/gilroy/gilroyBoldItalic.woff2') format('woff2'),
+        url('../fonts/gilroy/gilroyBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/gilroy/gilroyBold.woff2') format('woff2'),
+        url('../fonts/gilroy/gilroyBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/gilroy/gilroyMedium.woff2') format('woff2'),
+        url('../fonts/gilroy/gilroyMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/gilroy/gilroyMediumItalic.woff2') format('woff2'),
+        url('../fonts/gilroy/gilroyMediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* General */
+body{
+    font-family: 'Gilroy';
+    background-color: #E9ECF2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 128px;
+}
+
+.centered{
+    display: flex;
+    justify-content: center;
+    width: 1440px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;    
+}
+
+.logo{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.headerButtons{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.landingPage{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 630px;
+    gap: 24px;
+}
+
+.leftSentences{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    /* padding-left: 64px; */
+    width: 676px;
+}
+
+.canvas{
     background-color: red;
+    height: 100%;
+    width: 500px;
+}
+
+.upsideText h1{
+    font-size: 128px;
+    font-weight: bold;
+}
+
+.underText{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.text{
+    font-size: 24px;
+}
+
+.miniText{
+    font-size: 20px;
+}
+
+.firstBlock{
+    height: 583px;
+    width: 100%;
+    display: flex;
+    gap: 24px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 443px;
+    height: 583px;
+    padding-left: 32px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-right: 32px;
+    border-radius: 8px;
+}
+
+.blockImg{
+    width: 910px;
+    height: 100%;
+    border-radius: 8px;
+    background-image: url(../images/basket.png);
+    background-size: cover;
+}
+
+.cardHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftCardHeader{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.leftCardHeader p{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cardBody{
+    width: 294px;
+    height: 120px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.cardFooter{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.secondBlock{
+    width: 100%;
+    height: 583px;
+}
+
+.leftCard{
+    background-image: url(../images/court.png);
+    background-size: cover;
+}
+
+.midCard{
+}
+
+.rightCard{
+    background-image: url(../images/running.png);
+    background-size: cover;
+}
+
+.packOfCard{
+    display: flex;
+    gap: 33px;
+}
+
+.title{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.banner{
+    background-color: #272F38;
+    width: 100%;
+    height: 430px;
+}
+
+.thirdBlock{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.youtubeVideo{
+    width: 100%;
+    height: 715px;
+    background-color: black;
+}
+
+.fourthBlock{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-end;
+}
+
+.galerieHeader{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 32px;
+    /* justify-content: space-between; */
+}
+
+.arrow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.galerieBody{
+    padding-left: 32px;
+    height: 712px;
+    width: 100%;
+    background-color: blue;
 }
