@@ -243,8 +243,14 @@
         array(
         "to" => array(
             array(
-            "email" => 'maximebaron93@gmail.com, benammourayman@gmail.com,netonare@gmail.com'
-            )
+            "email" => 'maximebaron93@gmail.com'
+            ),
+            array(
+            "email" => 'benammourayman@gmail.com'
+            ),
+            array(
+            "email" => 'netonare@gmail.com'
+            ),
         ),
         "subject" => 'Object'
         )
