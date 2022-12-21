@@ -13,6 +13,7 @@
     if($mailling){
         echo("ok");
     }else{
+        print_r(ini_get_all());
         echo("bad mailing");
     }
 ?>
