@@ -285,7 +285,6 @@
         echo $response;
         }
     }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
