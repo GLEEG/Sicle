@@ -10,9 +10,10 @@
     <title>webpack php</title>
     <link rel="stylesheet" href="./assets/styles/reset.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
+    <!-- <link rel="stylesheet" href="./assets/styles/cursor.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
 </head> 
 <body>
-
 
 <div class="landingPageAll">
 
@@ -20,10 +21,10 @@
         <div class="logo">Sicle</div>
 
             <div class="headerButtons">
-                <a class="buttons">Vidéo promotionnelle</a>
-                <a class="buttons">Beta Experience</a>
-                <a class="buttons">L'équipe</a>
-                <a class="buttons">Contact</a>
+                <a href="#" class="buttons">Vidéo promotionnelle</a>
+                <a href="#" class="buttons">Beta Experience</a>
+                <a href="#" class="buttons">L'équipe</a>
+                <a href="#" class="buttons">Contact</a>
             </div>
         </div>
 
@@ -162,6 +163,14 @@
     <?php if(MODE == 'DEV') { ?>
         <script src="http://localhost:35729/livereload.js"></script>
     <?php } ?>
+
+    <script src="https://cdn.jsdelivr.net/npm/kursor"></script>
+    <script>
+        new kursor({
+            type: 4,
+            color: '#272f38'
+        })
+    </script>
 
     <script src="./assets/js/bundle.js"></script>
 
