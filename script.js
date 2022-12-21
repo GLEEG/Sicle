@@ -117,13 +117,12 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
  * Animate
  */
 const clock = new THREE.Clock()
-let previousTime = 0
 
 const tick = () =>
 {
     const elapsedTime = clock.getElapsedTime()
 
-    logo.rotation.y = - elapsedTime
+    logo.rotation.y = - elapsedTime * 0.7
 
     // Update controls
     controls.update()

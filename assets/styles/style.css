@@ -49,6 +49,7 @@ body{
     flex-direction: column;
     justify-content: center;
     gap: 128px;
+    color: #272F38;
 }
 
 .centered{
@@ -194,9 +195,6 @@ body{
 .leftCard{
     background-image: url(../images/court.png);
     background-size: cover;
-}
-
-.midCard{
 }
 
 .rightCard{
@@ -370,4 +368,39 @@ input[type="email"] {
     color: #FFFFFF;
     font-size: 14px;
     font-weight: bold;
+}
+
+.buttons::before{
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+.buttons:hover::before{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.buttons::before{
+    content: " ";
+    display: block;
+    position: absolute;
+    top: -7px; right: -12px; bottom: 0; left: -12px;
+    background: #272F38;
+    z-index: -1;
+    border-radius: 100px;
+    transition: transform .3s ease;
+    height: 30px;
+}
+
+.buttons{
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    transition: all 0.2s ease-out;
+}
+
+.buttons:hover{
+    color: #FFFFFF;
 }
