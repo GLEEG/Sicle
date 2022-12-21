@@ -6,9 +6,30 @@
     ini_set('sendmail_from', 'sicle');
     ini_set('smtp_password', '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');
 
-    $message = "<h1>Test d'email</h1>";
-    $headers[] = "Content-type: text/html; charset=utf-8";
-    $headers[] = "From : gleegs.agency@gmail.com";
+    $smtp_username = 'sicle';
+    $smtp_password = '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';
+
+    // Destinataire, objet et corps de l'email
+    $to = 'maximebaron93@gmail.com';
+    $subject = 'Test Email';
+    $message = 'This is a test email.';
+
+    // En-têtes de l'email
+    $headers = "From: gleegs.agency@gmail.com\r\n";
+    $headers .= "Reply-To: gleegs.agency@gmail.com\r\n";
+    $headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+
+    // En-têtes d'authentification
+    $headers .= 'Authorization: Basic '. base64_encode("$smtp_username:$smtp_password") . "\r\n";
+    $headers .= "X-PHP-Originating-Script: sicle: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\n";
+
+    // Envoi de l'email
+    $mailling = mail($to, $subject, $message, $headers);
+
+    // $message = "<h1>Test d'email</h1>";
+    // $headers[] = "Content-type: text/html; charset=utf-8";
+    // $headers[] = "From : gleegs.agency@gmail.com";
     $mailling = mail("maximebaron93@gmail.com","Object",$message,implode("\r\n", $headers));
     if($mailling){
         echo("ok");
