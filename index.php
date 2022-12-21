@@ -75,6 +75,8 @@
         <div class="blockImg cardImage"></div>
     </div>
 
+
+
     <div class="secondBlock centered">
             <div class="cardImage leftCard"></div>
             <div class="card midCard">
@@ -100,7 +102,16 @@
             <div class="cardImage rightCard"></div>
     </div>
 
-    <div class="banner"></div>
+    <div class="marquee">
+        <div class="rightMarquee" data-text="SICLE">&nbsp; SICLE &nbsp; SICLE</div>
+        <div class="leftMarquee" data-text="SICLE">&nbsp; SICLE &nbsp; SICLE</div>
+        <div class="rightMarquee" data-text="SICLE">&nbsp; SICLE &nbsp; SICLE</div>
+        <div class="leftMarquee" data-text="SICLE">&nbsp; SICLE &nbsp; SICLE</div>
+        <div class="rightMarquee" data-text="SICLE">&nbsp; SICLE &nbsp; SICLE</div>
+        <div class="leftMarquee" data-text="SICLE">&nbsp; SICLE &nbsp; SICLE</div>
+    </div>
+
+    <!-- <div class="banner"></div> -->
 
     <div class="thirdBlock centered">
         <div class="title">
@@ -133,15 +144,22 @@
         <div class="fifthRightContent"></div>
     </div>
 
+
     <div class="contact">
         <div class="leftContactContent">
             <div class="contactTitle">
-                <p>Restez informé grâce à notre newsletters.</p>
+                <p>Restez informé grâce à notre newsletter.</p>
             </div>
 
-            <input type="email" placeholder="EMAIL">
+            <input type="email" placeholder="Email">
+            <input type="text" class="hidden" placeholder="Poids (en kilogrammes)">
+            <input type="text" class="hidden" placeholder="Taille (en centimètre)">
+            <input type="text" class="hidden" placeholder="Âge">
+            <input type="text" class="hidden" placeholder="Genre">
+            <input type="text" class="hidden" placeholder="Objectif">
 
-            <button class="contactButton">BLABLABLA</button>
+
+            <button class="contactButton">Button</button>
         </div>
         <div class="rightContactContent">
 
@@ -156,10 +174,6 @@
         </div>
     </div>
 
-    <div class="marquee">
-        <div class="rightMarquee">&nbsp; SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE</div>
-        <div class="leftMarquee">&nbsp; SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE</div>
-    </div>
 
 
 

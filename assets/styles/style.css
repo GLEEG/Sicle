@@ -46,19 +46,19 @@
 
 @keyframes rightMarquee {
     from { 
-        transform: translateX(0%); 
+        transform: translateX(100%); 
     }
     to { 
-        transform: translateX(50%); 
+        transform: translateX(-100%); 
     }
   }
 
   @keyframes leftMarquee {
     from { 
-        transform: translateX(50%); 
+        transform: translateX(-50%); 
     }
     to { 
-        transform: translateX(0%); 
+        transform: translateX(50%); 
     }
   }
 
@@ -100,12 +100,17 @@ a{
     width: 100%;
     display: flex;
     font-size: 32px;
-    background-color: red;
+    background-color: #272F38;
     overflow: hidden;
 }
 
+
+.rightMarquee::before{
+    content: attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text);
+}
+
 .rightMarquee{
-    animation: rightMarquee 5s linear infinite;
+    animation: rightMarquee 30s linear infinite;
     white-space: nowrap;
     will-change: transform;
     font-size: 32px;
@@ -113,13 +118,26 @@ a{
     color: #FFFFFF;
 }
 
+.rightMarquee::after{
+    content: attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text);
+}
+
+
+.leftMarquee::before{
+    content: attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text);
+}
+
 .leftMarquee{
-    animation: leftMarquee 5s linear infinite;
+    animation: leftMarquee 30s linear infinite;
     white-space: nowrap;
     will-change: transform;
     font-size: 32px;
     font-weight: bold;
     color: #FFFFFF;
+}
+
+.leftMarquee::after{
+    content: attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text) " " attr(data-text);
 }
 
 .buttons::before{
@@ -231,11 +249,6 @@ a{
 {
     width: 100%;
     border-radius: 8px;
-}
-
-.cardImage:hover{
-    transform: scale(1.1);
-    transition: ease-in-out 500ms;
 }
 
 .cardHeader{
@@ -392,15 +405,24 @@ a{
     font-display: swap;
 }
 
-input[type="email"] {
+input[type="email"]{
     display: flex;
     align-items: center;
     height: 32px;
     padding-left: 8px;
     color: #FFFFFF;
     border-bottom: 1px solid #909CAA;
-
 }
+
+input[type="text"]{
+    display: flex;
+    align-items: center;
+    height: 32px;
+    padding-left: 8px;
+    color: #FFFFFF;
+    border-bottom: 1px solid #909CAA;
+}
+
 
 .contactButton{
     display: flex;
@@ -413,6 +435,13 @@ input[type="email"] {
     font-weight: bold;
     font-style: italic;
     font-display: swap;
+    transform: scale(1);
+    transition: ease-out 200ms;
+}
+
+.contactButton:hover{
+    transform: scale(1.1);
+    transition: ease-out 200ms;
 }
 
 .rightContactContent{
@@ -453,4 +482,9 @@ input[type="email"] {
     color: #FFFFFF;
     font-size: 14px;
     font-weight: bold;
+}
+
+
+.hidden{
+    display: none !important; 
 }
