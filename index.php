@@ -1,14 +1,5 @@
 <?php
     include_once './includes/devReload.php';
-    // $message = "<h1>Test d'email</h1>";
-    // $headers[] = "Content-type: text/html; charset=utf-8";
-    // $headers[] = "From : gleegs.agency@gmail.com";
-    // $mailling = mail("maximebaron93@gmail.com","Object",$message,$headers);
-    // if($mailling){
-    //     echo("ok");
-    // }else{
-    //     echo("bad mailling");
-    // }
 ?>
 <!DOCTYPE html>
 <html lang="en">
