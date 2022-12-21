@@ -1,5 +1,5 @@
 <?php
-    include_once './includes/devReload.php'
+    include_once './includes/devReload.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
