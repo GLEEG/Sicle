@@ -35,6 +35,12 @@
     font-display: swap;
 }
 
+@media (min-width: 1440px){
+    .centered{
+        width: 1440px !important;
+    }
+}
+
 /* General */
 body{
     font-family: 'Gilroy';
@@ -48,7 +54,7 @@ body{
 .centered{
     display: flex;
     justify-content: center;
-    width: 1440px;
+    width: 100%;
     padding-left: 32px;
     padding-right: 32px;
     margin-right: auto;
@@ -75,7 +81,6 @@ body{
 .landingPage{
     display: flex;
     align-items: center;
-    width: 100%;
     height: 630px;
     gap: 24px;
 }
@@ -91,7 +96,7 @@ body{
 .canvas{
     background-color: red;
     height: 100%;
-    width: 500px;
+    width: 100%;
 }
 
 .upsideText h1{
@@ -125,6 +130,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-shrink: 0;
     width: 443px;
     height: 583px;
     padding-left: 32px;
@@ -135,11 +141,16 @@ body{
 }
 
 .blockImg{
-    width: 910px;
     height: 100%;
     border-radius: 8px;
     background-image: url(../images/basket.png);
     background-size: cover;
+}
+
+.cardImage
+{
+    width: 100%;
+    border-radius: 8px;
 }
 
 .cardHeader{
@@ -177,7 +188,7 @@ body{
 }
 
 .secondBlock{
-    width: 100%;
+    display: flex;
     height: 583px;
 }
 
@@ -249,4 +260,115 @@ body{
     height: 712px;
     width: 100%;
     background-color: blue;
+}
+
+
+.fifthBlock{
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+
+.fifthLeftContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+
+.fifthRightContent{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+
+.contact{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.leftContactContent{
+    width: 576px;
+    background-color: #272F38;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    justify-content: space-between;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 256px;
+    padding-bottom: 256px;
+}
+
+.contactTitle{
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+input[type="email"] {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    padding-left: 8px;
+    color: #FFFFFF;
+    border-bottom: 1px solid #909CAA;
+
+}
+
+.contactButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    background-color: #FFFFFF;
+    border-radius: 100px;
+    height: 50px;
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+.rightContactContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 16px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/playingBasket.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 64px;
+    font-size: 32px;
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    /* filter: brightness(50%); */
+    /* opacity: 0.5; */
+}
+
+.uperText{
+    display: flex;
+    justify-content: flex-start;
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+.downText{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
 }
