@@ -35,11 +35,33 @@
     font-display: swap;
 }
 
+/* Media query */
 @media (min-width: 1440px){
     .centered{
         width: 1440px !important;
     }
 }
+
+/* Keyframe */
+
+@keyframes rightMarquee {
+    from { 
+        transform: translateX(0%); 
+    }
+    to { 
+        transform: translateX(50%); 
+    }
+  }
+
+  @keyframes leftMarquee {
+    from { 
+        transform: translateX(50%); 
+    }
+    to { 
+        transform: translateX(0%); 
+    }
+  }
+
 
 /* General */
 body{
@@ -49,6 +71,10 @@ body{
     flex-direction: column;
     justify-content: center;
     gap: 128px;
+}
+
+a{
+    cursor: pointer;
 }
 
 .centered{
@@ -65,6 +91,61 @@ body{
     display: flex;
     justify-content: space-between;
     margin-top: 32px;    
+}
+
+.marquee{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    font-size: 32px;
+    background-color: red;
+    overflow: hidden;
+}
+
+.rightMarquee{
+    animation: rightMarquee 5s linear infinite;
+    white-space: nowrap;
+    will-change: transform;
+    font-size: 32px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.leftMarquee{
+    animation: leftMarquee 5s linear infinite;
+    white-space: nowrap;
+    will-change: transform;
+    font-size: 32px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.buttons::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 1px solid #000000;
+    background: none;
+    width: 0;
+    height: 100%;
+    transition: 350ms;
+    margin-top: 5px;
+}
+
+.buttons{
+    position: relative;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.buttons:hover::before{
+    width: 100%;
+
 }
 
 .logo{
@@ -152,6 +233,11 @@ body{
     border-radius: 8px;
 }
 
+.cardImage:hover{
+    transform: scale(1.1);
+    transition: ease-in-out 500ms;
+}
+
 .cardHeader{
     display: flex;
     justify-content: space-between;
@@ -194,9 +280,6 @@ body{
 .leftCard{
     background-image: url(../images/court.png);
     background-size: cover;
-}
-
-.midCard{
 }
 
 .rightCard{

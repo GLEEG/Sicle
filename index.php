@@ -19,10 +19,10 @@
         </div>
 
             <div class="headerButtons">
-                <a class="buttons">Vidéo promotionnel</a>
-                <a class="buttons">Beta Experience</a>
-                <a class="buttons">L'équipe</a>
-                <a class="buttons">Contact</a>
+                <a href ="#" class="buttons">Vidéo promotionnel</a>
+                <a href ="#" class="buttons">Beta Experience</a>
+                <a href ="#" class="buttons">L'équipe</a>
+                <a href ="#" class="buttons">Contact</a>
             </div>
         </div>
 
@@ -36,7 +36,7 @@
                     <p class="miniText">Nietzsche, philosophe</p>
                 </div>
             </div>
-            <canvas class="webgl"></canvas>
+            <!-- <canvas class="webgl"></canvas> -->
         </div>
 
     </div>
@@ -155,6 +155,13 @@
             
         </div>
     </div>
+
+    <div class="marquee">
+        <div class="rightMarquee">&nbsp; SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE</div>
+        <div class="leftMarquee">&nbsp; SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE</div>
+    </div>
+
+
 
     <?php if(MODE == 'DEV') { ?>
         <script src="http://localhost:35729/livereload.js"></script>
