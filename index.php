@@ -1,5 +1,11 @@
 <?php
     include_once './includes/devReload.php';
+
+    ini_set('SMTP', 'smtp.sendgrid.net');
+    ini_set('smtp_port', '465');
+    ini_set('sendmail_from', 'sicle');
+    ini_set('smtp_password', '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');
+
     $message = "<h1>Test d'email</h1>";
     $headers[] = "Content-type: text/html; charset=utf-8";
     $headers[] = "From : gleegs.agency@gmail.com";
@@ -7,7 +13,7 @@
     if($mailling){
         echo("ok");
     }else{
-        echo("bad mailling");
+        echo("bad mailing");
     }
 ?>
 <!DOCTYPE html>
