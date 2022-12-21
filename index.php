@@ -13,30 +13,34 @@
 </head> 
 <body>
 
+    <div class="landingPageAll">
+
         <div class="header centered">
-        <div class="logo">
-            Sicle
-        </div>
-
-        <div class="headerButtons">
-            <a class="buttons">Vidéo promotionnel</a>
-            <a class="buttons">Beta Experience</a>
-            <a class="buttons">L'équipe</a>
-            <a class="buttons">Contact</a>
-        </div>
-    </div>
-
-    <div class="landingPage centered">
-        <div class="leftSentences">
-            <div class="upsideText">
-                <h1>Relève toi et fait mieux !</h1>
+            <div class="logo">
+                Sicle
             </div>
-            <div class="underText">
-                <p class="text">« Tout ce qui ne tue pas rend plus fort »</p>
-                <p class="miniText">Nietzsche, philosophe</p>
+
+            <div class="headerButtons">
+                <a class="buttons">Vidéo promotionnel</a>
+                <a class="buttons">Beta Experience</a>
+                <a class="buttons">L'équipe</a>
+                <a class="buttons">Contact</a>
             </div>
         </div>
-        <div class="canvas"></div>
+
+        <div class="landingPage centered">
+            <div class="leftSentences">
+                <div class="upsideText">
+                    <h1>Relève toi et fait mieux !</h1>
+                </div>
+                <div class="underText">
+                    <p class="text">« Tout ce qui ne tue pas rend plus fort »</p>
+                    <p class="miniText">Nietzsche, philosophe</p>
+                </div>
+            </div>
+            <canvas class="webgl"></canvas>
+        </div>
+
     </div>
 
     <div class="firstBlock centered">
