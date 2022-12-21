@@ -30,7 +30,7 @@
     // $message = "<h1>Test d'email</h1>";
     // $headers[] = "Content-type: text/html; charset=utf-8";
     // $headers[] = "From : gleegs.agency@gmail.com";
-    $mailling = mail("maximebaron93@gmail.com","Object",$message,implode("\r\n", $headers));
+    // $mailling = mail("maximebaron93@gmail.com","Object",$message,implode("\r\n", $headers));
     if($mailling){
         echo("ok");
     }else{
