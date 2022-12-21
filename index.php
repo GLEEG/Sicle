@@ -9,34 +9,78 @@
     $smtp_username = 'sicle';
     $smtp_password = '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';
 
-    // Destinataire, objet et corps de l'email
-    $to = 'maximebaron93@gmail.com';
-    $subject = 'Test Email';
-    $message = 'This is a test email.';
+        // Création de l'instance de cURL
+    $curl = curl_init();
 
-    // En-têtes de l'email
-    $headers = "From: gleegs.agency@gmail.com\r\n";
-    $headers .= "Reply-To: gleegs.agency@gmail.com\r\n";
-    $headers .= "MIME-Version: 1.0\r\n";
-    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+    // Définition de l'URL de l'API SendGrid
+    $url = 'https://api.sendgrid.com/v3/mail/send';
 
-    // En-têtes d'authentification
-    $headers .= 'Authorization: Basic '. base64_encode("$smtp_username:$smtp_password") . "\r\n";
-    $headers .= "X-PHP-Originating-Script: sicle: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\n";
+    // Préparation des données à envoyer à l'API
+    $data = array(
+    "personalizations" => array(
+        array(
+        "to" => array(
+            array(
+            "email" => 'maximebaron93@gmail.com'
+            )
+        ),
+        "subject" => 'Object'
+        )
+    ),
+    "from" => array(
+        "email" => 'gleegs.agency@gmail.com'
+    ),
+    "content" => array(
+        array(
+        "type" => "text/plain",
+        "value" => "<h1>Test d'email</h1>"
+        )
+    )
+    );
 
-    // Envoi de l'email
-    $mailling = mail($to, $subject, $message, $headers);
+    // Configuration de cURL
+    curl_setopt_array($curl, array(
+    CURLOPT_URL => $url,
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_ENCODING => "",
+    CURLOPT_MAXREDIRS => 10,
+    CURLOPT_TIMEOUT => 30,
+    CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+    CURLOPT_CUSTOMREQUEST => "POST",
+    CURLOPT_POSTFIELDS => json_encode($data),
+    CURLOPT_HTTPHEADER => array(
+        "Authorization: Bearer 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",
+        "Content-Type: application/json"
+    ),
+    ));
+
+    // Envoi de la requête HTTP
+    $response = curl_exec($curl);
+    $err = curl_error($curl);
+
+    // Fermeture de l'instance de cURL
+    curl_close($curl);
+
+    // Vérification de la réponse de l'API
+    if ($err) {
+    // Erreur lors de l'envoi de la requête
+    echo "cURL Error #:" . $err;
+    } else {
+    // Réponse de l'API
+    echo $response;
+    }
+
 
     // $message = "<h1>Test d'email</h1>";
     // $headers[] = "Content-type: text/html; charset=utf-8";
     // $headers[] = "From : gleegs.agency@gmail.com";
     // $mailling = mail("maximebaron93@gmail.com","Object",$message,implode("\r\n", $headers));
-    if($mailling){
-        echo("ok");
-    }else{
-        print_r(ini_get_all());
-        echo("bad mailing");
-    }
+    // if($mailling){
+    //     echo("ok");
+    // }else{
+    //     print_r(ini_get_all());
+    //     echo("bad mailing");
+    // }
 ?>
 <!DOCTYPE html>
 <html lang="en">
