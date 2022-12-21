@@ -109,8 +109,9 @@
             <!-- <video src="#"></video> -->
         </div>
     </div>
+    
 
-    <div class="fourthBlock">
+    <!-- <div class="fourthBlock">
         <div class="galerieHeader">
             <div class="title">GALERIE</div>
             <div class="arrow">
@@ -120,6 +121,36 @@
         </div>
 
         <div class="galerieBody">
+        </div>
+    </div> -->
+
+    <div class="fifthBlock centered">
+        <div class="fifthLeftContent">
+            <img src="./assets/images/imageApplication.png" alt="application">
+        </div>
+        <div class="fifthRightContent"></div>
+    </div>
+
+    <div class="contact">
+        <div class="leftContactContent">
+            <div class="contactTitle">
+                <p>Restez informé grâce à notre newsletters.</p>
+            </div>
+
+            <input type="email" placeholder="EMAIL">
+
+            <button class="contactButton">BLABLABLA</button>
+        </div>
+        <div class="rightContactContent">
+
+            <div class="uperText">
+                <h1>Grâce à des fonctionnalités innovantes et une interface intuitive, Sicle vous accompagne dans votre parcours de sport et vous encourage à atteindre vos objectifs de santé et de bien-être.</h1>
+            </div>
+            
+            <div class="downText">
+            <p>Alors n'hésitez pas à télécharger l'application et à vous mettre au sport avec Sicle !</p>
+            </div>
+            
         </div>
     </div>
 
