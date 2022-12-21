@@ -93,8 +93,7 @@ body{
     width: 676px;
 }
 
-.canvas{
-    background-color: red;
+.webgl{
     height: 100%;
     width: 100%;
 }
