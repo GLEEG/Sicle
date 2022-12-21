@@ -1,5 +1,7 @@
 <?php
-    include_once './includes/devReload.php'
+    include_once './includes/devReload.php';
+    $message = "<h1>Test d'email</h1>";
+    mail("maximebaron93@gmail.com","Object",$message,"Content-type: text/html; charset=utf-8");
 ?>
 <!DOCTYPE html>
 <html lang="en">
