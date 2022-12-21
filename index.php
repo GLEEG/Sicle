@@ -13,60 +13,73 @@
 </head> 
 <body>
 
-        <div class="header centered">
-        <div class="logo">
-            Sicle
-        </div>
 
-        <div class="headerButtons">
-            <a class="buttons">Vidéo promotionnel</a>
-            <a class="buttons">Beta Experience</a>
-            <a class="buttons">L'équipe</a>
-            <a class="buttons">Contact</a>
-        </div>
-    </div>
+<div class="landingPageAll">
 
-    <div class="landingPage centered">
-        <div class="leftSentences">
-            <div class="upsideText">
-                <h1>Relève toi et fait mieux !</h1>
-            </div>
-            <div class="underText">
-                <p class="text">« Tout ce qui ne tue pas rend plus fort »</p>
-                <p class="miniText">Nietzsche, philosophe</p>
+    <div class="header centered">
+        <div class="logo">Sicle</div>
+
+            <div class="headerButtons">
+                <a class="buttons">Vidéo promotionnelle</a>
+                <a class="buttons">Beta Experience</a>
+                <a class="buttons">L'équipe</a>
+                <a class="buttons">Contact</a>
             </div>
         </div>
-        <div class="canvas"></div>
-    </div>
 
+        <div class="landingPage centered">
+            <div class="leftSentences">
+                <div class="upsideText">
+                    <h1>Relève toi et fait mieux !</h1>
+                </div>
+                <div class="underText">
+                    <p class="text">« Tout ce qui ne tue pas rend plus fort »</p>
+                    <p class="miniText">Nietzsche, philosophe</p>
+                </div>
+            </div>
+            <canvas class="webgl"></canvas>
+        </div>
+
+    </div>
+        
+</div>
+
+    <!-- First section definition -->
     <div class="firstBlock centered">
+
+        <!-- Card definition -->
         <div class="card blue">
+
+            <!-- A RENOMMER TITLE OF DEFINITION / Name of word -->
             <div class="cardHeader">
+                <!-- A RENOMMER NAME OF WORD / Name of word -->
                 <div class="leftCardHeader">
                     <h1>DISCIPLINE</h1>
                     <p>n.f</p>
                 </div>
-                <div class="rightCardHeader">
-                    <img src="./assets/images/quote.svg" alt="quote">
-                </div>
+
+                <img src="./assets/images/quote.svg" alt="quote">
             </div>
 
+            <!-- A RENOMMER TEXT OF DEFINITION / Text of definition -->
             <div class="cardBody">
                 <p>Règle de conduite que l'on s'impose, maîtrise de soi, sens du devoir</p>
+                <br>
                 <p>Il s'astreint à une discipline alimentaire très stricte.</p>
             </div>
 
+            <!-- A RENOMMER LEGEND / Legend -->
             <div class="cardFooter">
                 <p>DÉFINITION</p>
             </div>
+            
         </div>
 
-        <div class="blockImg"></div>
+        <div class="blockImg cardImage"></div>
     </div>
 
     <div class="secondBlock centered">
-        <div class="packOfCard">
-            <div class="card leftCard"></div>
+            <div class="cardImage leftCard"></div>
             <div class="card midCard">
                 <div class="cardHeader">
                     <div class="leftCardHeader">
@@ -87,8 +100,7 @@
                     <p>DÉFINITION</p>
                 </div>
             </div>
-            <div class="card rightCard"></div>
-        </div>
+            <div class="cardImage rightCard"></div>
     </div>
 
     <div class="banner"></div>
@@ -102,8 +114,9 @@
             <!-- <video src="#"></video> -->
         </div>
     </div>
+    
 
-    <div class="fourthBlock">
+    <!-- <div class="fourthBlock">
         <div class="galerieHeader">
             <div class="title">GALERIE</div>
             <div class="arrow">
@@ -113,6 +126,36 @@
         </div>
 
         <div class="galerieBody">
+        </div>
+    </div> -->
+
+    <div class="fifthBlock centered">
+        <div class="fifthLeftContent">
+            <img src="./assets/images/imageApplication.png" alt="application">
+        </div>
+        <div class="fifthRightContent"></div>
+    </div>
+
+    <div class="contact">
+        <div class="leftContactContent">
+            <div class="contactTitle">
+                <p>Restez informé grâce à notre newsletters.</p>
+            </div>
+
+            <input type="email" placeholder="EMAIL">
+
+            <button class="contactButton">BLABLABLA</button>
+        </div>
+        <div class="rightContactContent">
+
+            <div class="uperText">
+                <h1>Grâce à des fonctionnalités innovantes et une interface intuitive, Sicle vous accompagne dans votre parcours de sport et vous encourage à atteindre vos objectifs de santé et de bien-être.</h1>
+            </div>
+            
+            <div class="downText">
+            <p>Alors n'hésitez pas à télécharger l'application et à vous mettre au sport avec Sicle !</p>
+            </div>
+            
         </div>
     </div>
 
