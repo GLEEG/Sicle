@@ -81,7 +81,6 @@ body{
 .landingPage{
     display: flex;
     align-items: center;
-    height: 630px;
     gap: 24px;
 }
 
@@ -94,8 +93,9 @@ body{
 }
 
 .webgl{
-    height: 100%;
-    width: 100%;
+    height: 500px;
+    width: 622px;
+    cursor: grab;
 }
 
 .upsideText h1{

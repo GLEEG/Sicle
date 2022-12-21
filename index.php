@@ -13,13 +13,14 @@
 </head> 
 <body>
 
+
+<div class="landingPageAll">
+
     <div class="header centered">
-        <div class="logo">
-            Sicle
-        </div>
+        <div class="logo">Sicle</div>
 
             <div class="headerButtons">
-                <a class="buttons">Vidéo promotionnel</a>
+                <a class="buttons">Vidéo promotionnelle</a>
                 <a class="buttons">Beta Experience</a>
                 <a class="buttons">L'équipe</a>
                 <a class="buttons">Contact</a>
@@ -40,6 +41,8 @@
         </div>
 
     </div>
+        
+</div>
 
     <!-- First section definition -->
     <div class="firstBlock centered">
