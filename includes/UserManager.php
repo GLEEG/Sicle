@@ -39,7 +39,7 @@ class UserManager{
     }
     public function get(int $id){
         $req = $this->db->prepare("SELECT * FROM `user` WHERE id=:id");
-        $req = bindValue(":id", $id);
+        $req->bindValue(":id", $id);
         $req->execute();
         $data = $req->fetch();
         $user = new User($data);
@@ -48,7 +48,7 @@ class UserManager{
     public function getByEmail(string $email){
         $req = $this->db->prepare("SELECT * FROM `user` WHERE email=:email");
         var_dump($req);
-        $req = bindValue(":email", $email);
+        $req->bindValue(":email", $email);
         $req->execute();
         $data = $req->fetch();
         $user = new User($data);
