@@ -49,8 +49,6 @@ class UserManager{
         $req->bindValue(":email", $email);
         $req->execute();
         $data = $req->fetch();
-        var_dump($req->errorInfo());
-        var_dump($data);
         if($data == false){
             return false;
         }
