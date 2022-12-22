@@ -20,13 +20,13 @@ class UserManager{
     }
 
     public function add(User $user){
-        $req = $this->db->prepare("INSERT INTO `user` (username,email,weight,height,inscription_date,age,gender,weight_goal,sicoins,is_admin) VALUES (:username,:email,:weight,:height,:inscription_date,:age,:gender,:weight_goal,:sicoins,:is_admin)");
+        $req = $this->db->prepare("INSERT INTO `user` (username,email,weight,height,inscription_date,age,gender,weight_goal,sicoins,is_admin) VALUES (:username,:email,:weight,:height,NOW(),:age,:gender,:weight_goal,:sicoins,:is_admin)");
         
         $req->bindValue(":username", $user->getUsername());
         $req->bindValue(":email", $user->getEmail());
         $req->bindValue(":weight", $user->getWeight());
         $req->bindValue(":height", $user->getHeight());
-        $req->bindValue(":inscription_date", $user->getInscriptionDate());
+        // $req->bindValue(":inscription_date", $user->getInscriptionDate());
         $req->bindValue(":age", $user->getAge());
         $req->bindValue(":gender", $user->getGender());
         $req->bindValue(":weight_goal", $user->getWeightGoal());
