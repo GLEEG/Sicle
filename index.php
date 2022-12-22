@@ -481,6 +481,33 @@
 
     </div>
 
+    <div class="team centered">
+        <h2 class="boldItalic">L'équipe 🤝</h2>
+
+        <div class="allCardsTeam">
+            <div class="cardTeam">
+                <div class="name boldItalic">Ayman Benammour</div>
+                <div class="links">
+                    <div class="linkedinLink">
+                        <a class="buttons" href="#" target="_blank">LinkedIn</a> 
+                        <img class="logoLink" src="./assets/images/logoLinkedIn.svg" alt="LinkedIn logo">
+                    </div>
+                    <div class="githubLink">
+                        <a class="buttons" href="#" target="_blank">GitHub</a> 
+                        <img class="logoLink" src="./assets/images/logoGitHub.svg" alt="GitHub logo">
+                    </div>
+                    <div class="portfolioLink">
+                        <a class="buttons" href="#" target="_blank">Portfolio</a> 
+                        <img class="logoLink" src="./assets/images/iconPortfolio.svg" alt="Portfolio logo">
+                    </div>
+                </div>
+                <img src="./assets/images/avatar3dAyman.png" alt="">
+            </div>
+            <div class="cardTeam"></div>
+            <div class="cardTeam"></div>
+        </div>
+    </div>
+
     <!-- Contact -->
     <div id="contactAnchor" class="contact">
 
