@@ -540,9 +540,9 @@
                 </div>
                 <div class="personnalInfo hidden">
                     <input type="text" name="username" id="username" placeholder="Nom d'utilisateur">
-                    <input type="number" name="weight" id="weight" step="0.01" placeholder="Poids">
-                    <input type="number" name="height" id="height" placeholder="Taille (cm)">
-                    <input type="number" name="age" id="age" placeholder="Age">
+                    <input type="number" name="weight" id="weight" max=200 min=30 step="0.01" placeholder="Poids">
+                    <input type="number" name="height" id="height" max=300 min=100 placeholder="Taille (cm)">
+                    <input type="number" name="age" id="age" max=99 min=12 placeholder="Age">
                     <select name="gender" id="gender">
                         <option value="male">Homme</option>
                         <option value="female">Femme</option>
@@ -557,7 +557,7 @@
                     }
                 ?>
                 <?php 
-                    if(isset($error)){
+                    if(isset($succes)){
                         echo("<span class='succes'>$succes</span>");
                     }
                 ?>
