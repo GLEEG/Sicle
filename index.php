@@ -307,6 +307,7 @@
     <link rel="stylesheet" href="./assets/styles/reset.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+    <?php include_once './includes/gManager.php' ?>
 </head> 
 <body>
 
@@ -490,9 +491,6 @@
         </div>
     </div>
 
-
-
-
     <?php if(MODE == 'DEV') { ?>
         <script src="http://localhost:35729/livereload.js"></script>
     <?php } ?>
@@ -506,6 +504,11 @@
     </script>
 
     <script src="./assets/js/bundle.js"></script>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WBB7MXG"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
 </body>
 </html>
