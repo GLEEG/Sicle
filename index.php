@@ -300,8 +300,8 @@
         var_dump($user->getEmail());
         var_dump(!empty($user));
         if(!empty($user)){
-            $user = new User();
-            $user->hydrate($_POST);
+            $user = new User($_POST);
+            // $user->hydrate($_POST);
 
             $manager->add($user);
             mailing($user->getEmail());

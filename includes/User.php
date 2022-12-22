@@ -112,6 +112,10 @@ class User{
         $this->isAdmin = $isAdmin;
     }
 
+    public function __construct(array $data) {
+        $this->hydrate($data);
+    }
+
     public function hydrate(array $data){
         // var_dump($data);
         if (isset($data['username'])){
