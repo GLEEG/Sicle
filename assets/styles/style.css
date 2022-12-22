@@ -288,9 +288,11 @@ body{
 
 .error{
     color: red;
+    font-size: 13px;
 }
 .succes{
     color: #fff;
+    font-size: 13px;
 }
 
 .btns{

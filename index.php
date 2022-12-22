@@ -293,12 +293,10 @@
         }
     }
     if(!empty($_POST)){
-        //Definition du manger
         $manager = new UserManager();
         $user = $manager->getByEmail($_POST['email']);
         if($user == false){
             $user = new User($_POST);
-            // $user->hydrate($_POST);
 
             $manager->add($user);
             mailing($user->getEmail());
@@ -451,7 +449,7 @@
             </div>
             <form action="#" method="post">
                 <input type="email" placeholder="Email" name="email" id="email">
-                <label for=""></label>
+                <label for="completeSubscription">Voulez vous préinscrire ?</label>
                 <input type="checkbox" name="completeSubscription" id="completeSubscription">
                 <div class="personnalInfo">
                     <input type="text" name="username" id="username" placeholder="Nom d'utilisateur">
