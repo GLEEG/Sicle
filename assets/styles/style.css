@@ -286,6 +286,11 @@ a{
     font-weight: bold;
 }
 
+.titleFigma{
+    font-size: 32px;
+    font-weight: bold;
+}
+
 .text{
     font-size: 20px;
     font-weight: 500;
@@ -316,7 +321,6 @@ a{
     flex-direction: column;
     gap: 32px;
     width: 100%;
-    background-color: red;
 }
 
 .galerieHeader{

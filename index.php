@@ -389,6 +389,10 @@
 
                 <div class="cardBodyFifthBody">
                     <p>Sicle est conçue pour être facile à utiliser et intuitive, afin que les utilisateurs puissent suivre leur entraînement de manière efficace et atteindre leurs objectifs de fitness.</p>
+                    <br>
+                    <p>Sicle comprend plusieurs écrans, chacun dédié à une tâche spécifique. Nous avons également pris en compte la navigation dans l'application, pour que l'utilisateur puisse accéder facilement aux différentes fonctionnalités.</p>
+                    <br>
+                    <p>Sicle a été conçue pour répondre aux besoins de nos utilisateurs en leur offrant une expérience intuitive et facile d'utilisation.</p>
                 </div>
 
 
@@ -442,16 +446,16 @@
     </div>
     
     <div class="fourthBlock centered">
-        <div class="title">
+        <div class="titleFigma">
             Testez en avant-premiere le fonctionnement de l’application via un prototype Figma
         </div>
 
         <div class="text">
-            <p>Nous vous invitons à essayer l'expérience Sicle sur notre site web. Intéragissez avec le prototype ci-dessous pour y accéder.</p>
+            <p>Essayer l'expérience Sicle en interagissant avec le prototype ci-dessous 👇</p>
             <br>
-            <p>L'expérience Figma que nous avons prototypé pour notre application vous permet de naviguer de manière interactive dans notre interface et de découvrir les fonctionnalités en temps réel que nous avons a vous proposer.</p>
+            <p>Grâce aux maquettes Figma que nous avons designé et prototypé, vous pouvez naviguer de manière interactive dans linterface et découvrir les fonctionnalités en temps réel 📱</p>
             <br>
-            <p> Nous croyons que cette expérience vous offrira une meilleure compréhension de ce que nous proposons et vous aidera à prendre une décision d'inscription plus éclairée.</p>
+            <p>Cette expérience vous offrira une meilleure compréhension de ce que nous proposons 🤝</p>
         </div>
         
         <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FMie8JSDdfTnp2CHjPlyYZr%2FAPPLI-MOBILE---SICLE-%25F0%259F%2593%25B1%3Fpage-id%3D424%253A1415%26node-id%3D424%253A1416%26viewport%3D947%252C318%252C0.27%26scaling%3Dscale-down%26starting-point-node-id%3D526%253A2627" allowfullscreen></iframe>
