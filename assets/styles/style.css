@@ -472,7 +472,14 @@ label{
 }
 
 .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #FFF;
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    
 }
 
 .leftContactContent{
@@ -481,6 +488,7 @@ label{
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
+    gap: 50px;
     justify-content: space-between;
     padding-left: 64px;
     padding-right: 64px;
@@ -500,12 +508,45 @@ input{
     display: flex;
     align-items: center;
     height: 32px;
-    padding-left: 8px;
+    /* padding-left: 8px; */
     color: #FFFFFF;
     border-bottom: 1px solid #909CAA;
-    margin: 16px 0;
 }
 
+.inputStyle{
+    width: 30%;
+    height: 35px;
+}
+
+.selectStyle{
+    width: 30%;
+    background-color: #909CAA;
+    padding-left: 37px;
+    border-radius: 8px;
+}
+
+
+.emailInput input{
+    width: 60%;
+}
+
+.firstFormPart{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.personnalInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.displayTest{
+    display: flex;
+    flex-direction: column;
+    gap:32px;
+}
 
 .contactButton{
     display: flex;
@@ -513,14 +554,15 @@ input{
     justify-content: center;
     color: #000000;
     background-color: #FFFFFF;
-    border-radius: 100px;
-    height: 50px;
+    border-radius: 8px;
+    height: 30px;
+    width: 100px;
     font-weight: bold;
     font-style: italic;
     font-display: swap;
     transform: scale(1);
     transition: ease-out 200ms;
-
+    margin-top: 32px;
 }
 
 .contactButton:hover{
@@ -729,3 +771,4 @@ iframe{
     height: 20px;
     width: auto;
 }
+
