@@ -3,7 +3,7 @@
     ini_set('display_errors',true);
     include_once "./includes/devReload.php";
     function loadClass($class){
-        require "includes\\$class.php";
+        require "./includes/$class.php";
     }
     spl_autoload_register("loadClass");
 
