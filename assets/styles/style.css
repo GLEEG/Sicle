@@ -35,11 +35,24 @@
     font-display: swap;
 }
 
+/* Media query */
 @media (min-width: 1440px){
     .centered{
         width: 1440px !important;
     }
 }
+
+/* Keyframe */
+@keyframes rightMarquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  @keyframes leftMarquee {
+    from { transform: translateX(-50%); }
+    to { transform: translateX(0); }
+  }
+
 
 /* General */
 body{
@@ -49,7 +62,10 @@ body{
     flex-direction: column;
     justify-content: center;
     gap: 128px;
-    color: #272F38;
+}
+
+a{
+    cursor: pointer;
 }
 
 .centered{
@@ -66,6 +82,65 @@ body{
     display: flex;
     justify-content: space-between;
     margin-top: 32px;    
+}
+
+.marquee{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    font-size: 32px;
+    background-color: #272F38;
+    overflow: hidden;
+}
+
+
+
+.rightMarquee{
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.leftMarquee{
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.stop{
+    width: 100%;
+}
+
+
+
+.buttons::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 1px solid #000000;
+    background: none;
+    width: 0;
+    height: 100%;
+    transition: 350ms;
+    margin-top: 5px;
+}
+
+.buttons{
+    position: relative;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.buttons:hover::before{
+    width: 100%;
+
 }
 
 .logo{
@@ -173,8 +248,7 @@ body{
 }
 
 .cardBody{
-    width: 294px;
-    height: 120px;
+    width: 330px;
     font-size: 20px;
     font-weight: 500;
 }
@@ -212,6 +286,13 @@ body{
     font-weight: bold;
 }
 
+.text{
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
 .banner{
     background-color: #272F38;
     width: 100%;
@@ -233,8 +314,9 @@ body{
 .fourthBlock{
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    align-items: flex-end;
+    gap: 32px;
+    width: 100%;
+    background-color: red;
 }
 
 .galerieHeader{
@@ -264,6 +346,7 @@ body{
     width: 100%;
     height: 500px;
     display: flex;
+    gap: 32px;
 }
 
 .fifthLeftContent{
@@ -275,9 +358,12 @@ body{
 
 
 .fifthRightContent{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
     height: 100%;
-    background-color: red;
+    align-items: center;
 }
 
 .contact{
@@ -307,15 +393,24 @@ body{
     font-display: swap;
 }
 
-input[type="email"] {
+input[type="email"]{
     display: flex;
     align-items: center;
     height: 32px;
     padding-left: 8px;
     color: #FFFFFF;
     border-bottom: 1px solid #909CAA;
-
 }
+
+input[type="text"]{
+    display: flex;
+    align-items: center;
+    height: 32px;
+    padding-left: 8px;
+    color: #FFFFFF;
+    border-bottom: 1px solid #909CAA;
+}
+
 
 .contactButton{
     display: flex;
@@ -328,6 +423,13 @@ input[type="email"] {
     font-weight: bold;
     font-style: italic;
     font-display: swap;
+    transform: scale(1);
+    transition: ease-out 200ms;
+}
+
+.contactButton:hover{
+    transform: scale(1.1);
+    transition: ease-out 200ms;
 }
 
 .rightContactContent{
@@ -370,37 +472,35 @@ input[type="email"] {
     font-weight: bold;
 }
 
-.buttons::before{
-    transform: scaleX(0);
-    transform-origin: bottom right;
+
+.hidden{
+    display: none !important; 
 }
 
-.buttons:hover::before{
-    transform: scaleX(1);
-    transform-origin: bottom left;
+.cardFifthContent{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    flex-shrink: 0;
+    width: 80%;
+    height: 100%;
+    border-radius: 8px;
 }
 
-.buttons::before{
-    content: " ";
-    display: block;
-    position: absolute;
-    top: -7px; right: -12px; bottom: 0; left: -12px;
-    background: #272F38;
-    z-index: -1;
-    border-radius: 100px;
-    transition: transform .3s ease;
-    height: 30px;
-}
-
-.buttons{
-    position: relative;
-    text-decoration: none;
+.cardHeaderFifthContent h1{
+    font-size: 32px;
     font-weight: bold;
-    font-style: italic;
-    text-transform: uppercase;
-    transition: all 0.2s ease-out;
 }
 
-.buttons:hover{
-    color: #FFFFFF;
+.cardBodyFifthBody{
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+iframe{
+    width: 100%;
+    height: 715px;
+    border: 1px solid #272F38;
 }
