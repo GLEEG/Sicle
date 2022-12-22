@@ -33,7 +33,7 @@ class UserManager{
         $req->bindValue(":gender", $user->getGender());
         $req->bindValue(":weight_goal", $user->getWeightGoal());
         $req->bindValue(":sicoins", $user->getSiCoins());
-        $req->bindValue(":is_admin", $user->getIsAdmin());
+        $req->bindValue(":is_admin", 0);
 
         $req->execute();
     }
