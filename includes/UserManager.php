@@ -21,7 +21,6 @@ class UserManager{
     }
 
     public function add(User $user){
-        var_dump($this->db);
         $req = $this->db->prepare("INSERT INTO `user` (username,email,weight,height,inscription_date,age,gender,weight_goal,sicoins,is_admin) VALUES (:username,:email,:weight,:height,NOW(),:age,:gender,:weight_goal,:sicoins,:is_admin)");
         
         $req->bindValue(":username", $user->getUsername());
