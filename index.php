@@ -292,11 +292,12 @@
         echo $response;
         }
     }
-    $_POST['gender'] = NULL;
+    // $_POST['gender'] = NULL;
     // var_dump($_POST);
     if(!empty($_POST)){
         //Definition du manger
         $manager = new UserManager();
+        var_dump($manager);
         $user = $manager->getByEmail($_POST['email']);
         if(!empty($user)){
             $user = new User();
