@@ -133,7 +133,7 @@ class User{
             $this->setAge($data['age']);
         }
         if (isset($data['gender'])){
-            $this->setUsername($data['gender']);
+            $this->setGender($data['gender']);
         }
         if (isset($data['weightGoal'])){
             $this->setWeightGoal($data['weightGoal']);
