@@ -296,7 +296,7 @@
         //Definition du manger
         $manager = new UserManager();
         $user = $manager->getByEmail($_POST['email']);
-        var_dump($user);
+        var_dump($user->getEmail());
         var_dump(!empty($user));
         if(!empty($user)){
             $user = new User();
