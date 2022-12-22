@@ -1,6 +1,7 @@
 <?php
     error_reporting(E_ALL);
     ini_set('display_errors',true);
+    include_once "./includes/devReload.php";
     function loadClass($class){
         require_once "includes\\$class.php";
     }
@@ -479,7 +480,7 @@
         </div>
     </div>
 
-    <?php if(MODE == 'DEV') { ?>
+    <?php if($MODE == 'DEV') { ?>
         <script src="http://localhost:35729/livereload.js"></script>
     <?php } ?>
 
