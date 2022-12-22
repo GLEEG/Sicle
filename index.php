@@ -297,7 +297,7 @@
     if(!empty($_POST)){
         //Definition du manger
         $manager = new UserManager();
-        var_dump($_POST['email']);
+        // var_dump($_POST['email']);
         $user = $manager->getByEmail($_POST['email']);
         if(!empty($user)){
             $user = new User();
