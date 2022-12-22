@@ -300,7 +300,7 @@
 
         $manager = new UserManager();
         $manager->add($user);
-        var_dump($manager->getAll())
+        var_dump($manager->getAll());
     }
 ?>
 <!DOCTYPE html>
