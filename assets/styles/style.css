@@ -115,32 +115,39 @@ a{
     width: 100%;
 }
 
+.buttons::before{
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
 
+.buttons:hover::before{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
 
 .buttons::before{
-    content: '';
+    content: " ";
+    display: block;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-bottom: 1px solid #000000;
-    background: none;
-    width: 0;
-    height: 100%;
-    transition: 350ms;
-    margin-top: 5px;
+    top: -7px; right: -12px; bottom: 0; left: -12px;
+    background: #272F38;
+    z-index: -1;
+    border-radius: 100px;
+    transition: transform .3s ease;
+    height: 30px;
 }
 
 .buttons{
     position: relative;
-    font-size: 16px;
-    font-weight: bold;
     text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    transition: all 0.2s ease-out;
 }
 
-.buttons:hover::before{
-    width: 100%;
-
+.buttons:hover{
+    color: #FFFFFF;
 }
 
 .logo{
