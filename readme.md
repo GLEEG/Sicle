@@ -1,7 +1,7 @@
 # Sicle 👟
 
 ## Links
-- [GitHub]()
+- [GitHub](https://github.com/gleegs/sicle)
 - [Live](https://www.sicle-app.com/)
 
 ## License
