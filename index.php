@@ -456,7 +456,7 @@
                 </div>
                 <div class="personnalInfo hidden">
                     <input type="text" name="username" id="username" placeholder="Nom d'utilisateur">
-                    <input type="number" name="weight" id="weight" placeholder="Poids">
+                    <input type="number" name="weight" id="weight" step="0.01" placeholder="Poids">
                     <input type="number" name="height" id="height" placeholder="Taille (cm)">
                     <input type="number" name="age" id="age" placeholder="Age">
                     <select name="gender" id="gender">
