@@ -46,7 +46,7 @@ class UserManager{
     }
     public function getByEmail(string $email){
         $req = $this->db->prepare("SELECT * FROM `user` WHERE email=:email");
-        // var_dump($req);
+        var_dump($email);
         $req->bindValue(":email", $email);
         $req->execute();
         $data = $req->fetch();
