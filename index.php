@@ -528,7 +528,7 @@
         <h2 class="boldItalic">L'équipe 🤝</h2>
 
         <div class="allCardsTeam">
-            <div class="cardTeam cardAyman">
+            <div data-aos="fade-right" class="cardTeam cardAyman">
 
                 <div class="name boldItalic">Ayman Benammour</div>
 
@@ -557,7 +557,7 @@
             </div>
 
             <!-- Kylian -->
-            <div class="cardTeam cardKylian">
+            <div data-aos="zoom-in" class="cardTeam cardKylian">
 
                 <div class="name boldItalic">Kylian Alger</div>
 
@@ -579,7 +579,7 @@
                 <img class="photo" src="./assets/images/photoKylian.png" alt="">
             </div>
 
-            <div class="cardTeam cardMaxime">
+            <div data-aos="fade-left" class="cardTeam cardMaxime">
 
                 <div class="name boldItalic">Maxime Baron</div>
 
