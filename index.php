@@ -296,7 +296,7 @@
         //Definition du manger
         $manager = new UserManager();
         $user = $manager->getByEmail($_POST['email']);
-        if(!empty($user)){
+        if($user != false){
             $user = new User($_POST);
             // $user->hydrate($_POST);
 
