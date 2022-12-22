@@ -648,12 +648,15 @@
                 </div>
 
 
-                <input type="submit" value="Valider" class="contactButton">
+                
+
                 <div class="btns">
-                    <button class="btn prev invisible">Precédent</button>
+                    <button class="btn next invisible">Suivant <img class="imgButton" src="./assets/images/rightArrow.png" alt=""></button>
+                    <button class="btn prev invisible">Precédent <img src="./assets/images/leftArrow.png" alt=""></button>
                     <input type="submit" value="Valider" class="submit invisible">
-                    <button class="btn next invisible">Suivant</button>
                 </div>
+
+                <input type="submit" value="Valider" class="contactButton">
 
                 <?php 
                     if(isset($error)){

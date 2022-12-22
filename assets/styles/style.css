@@ -406,11 +406,14 @@ label{
 
 .show{
     display: block;
+    margin-top: 20px;
 }
 
 .invisible{
     visibility: hidden;
+    display: none;
 }
+
 .visible{
     visibility: visible;
 }
@@ -467,19 +470,27 @@ label{
 
 .btns{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    gap: 20px;
+    margin-top: 32px;
 }
 
 .btn{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 7px;
     background: #FFF;
-    width: 100px;
+    width: 100%;
     height: 30px;
     border-radius: 8px;
-    
+    cursor: pointer;
+}
+
+.imgButton{
+    width: 20px;
+    height: 20px;
 }
 
 .leftContactContent{
@@ -514,20 +525,27 @@ input{
 }
 
 .inputStyle{
-    width: 30%;
+    width: 100%;
     height: 35px;
 }
 
 .selectStyle{
-    width: 30%;
+    width: 100px;
+    height: 50px;
     background-color: #909CAA;
-    padding-left: 37px;
+    padding-left: 5px;
+    padding-top: 11px;
+    height: 39px;
     border-radius: 8px;
+    background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), radial-gradient(#ddd 70%, transparent 72%);
+    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 0.5em) 0.5em;
+    background-size: 5px 5px, 5px 5px, 1.5em 1.5em;
+    background-repeat: no-repeat;
 }
 
 
 .emailInput input{
-    width: 60%;
+    width: 100%;
 }
 
 .firstFormPart{
