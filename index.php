@@ -1,7 +1,14 @@
 <?php
-    include_once './includes/devReload.php';
+    error_reporting(E_ALL);
+    ini_set('display_errors',true);
+    include_once "./includes/devReload.php";
+    function loadClass($class){
+        require "./includes/$class.php";
+    }
+    spl_autoload_register("loadClass");
 
-    function mailing(){
+
+    function mailing($email){
         $message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
         <html data-editor-version="2" class="sg-campaigns" xmlns="http://www.w3.org/1999/xhtml">
             <head>
@@ -236,7 +243,7 @@
             array(
             "to" => array(
                 array(
-                "email" => 'maximebaron93@gmail.com'
+                "email" => $email
                 )
             ),
             "subject" => 'BIENVENUE SUR SICLE'
@@ -283,6 +290,19 @@
         } else {
         // Réponse de l'API
         echo $response;
+        }
+    }
+    if(!empty($_POST)){
+        $manager = new UserManager();
+        $user = $manager->getByEmail($_POST['email']);
+        if($user == false){
+            $user = new User($_POST);
+
+            $manager->add($user);
+            mailing($user->getEmail());
+            $succes = "Adresse bien enregistrée vous recevrez un mail dans quelques instants";
+        }else{
+            $error = "L'adresse mail existe déjà";
         }
     }
 ?>
@@ -511,16 +531,43 @@
             <div class="contactTitle boldItalic">
                 <p>Restez informé grâce à notre newsletter.</p>
             </div>
-
-            <input type="email" placeholder="Email">
-            <input type="text" class="hidden" placeholder="Poids (en kilogrammes)">
-            <input type="text" class="hidden" placeholder="Taille (en centimètre)">
-            <input type="text" class="hidden" placeholder="Âge">
-            <input type="text" class="hidden" placeholder="Genre">
-            <input type="text" class="hidden" placeholder="Objectif">
-
-            <button class="contactButton">Suivant</button>
-
+            <!-- action="#"  -->
+            <form method="post">
+                <input type="email" placeholder="Email" name="email" id="email">
+                <div class="checkbox">
+                    <input type="checkbox" name="completeSubscription" id="completeSubscription">
+                    <label for="completeSubscription">Voulez vous pré-inscrire ?</label>
+                </div>
+                <div class="personnalInfo hidden">
+                    <input type="text" name="username" id="username" placeholder="Nom d'utilisateur">
+                    <input type="number" name="weight" id="weight" step="0.01" placeholder="Poids">
+                    <input type="number" name="height" id="height" placeholder="Taille (cm)">
+                    <input type="number" name="age" id="age" placeholder="Age">
+                    <select name="gender" id="gender">
+                        <option value="male">Homme</option>
+                        <option value="female">Femme</option>
+                    </select>
+                </div>
+                <div class="goal hidden">
+                    <input type="number" name="weightGoal" id="weightGoal" step="0.01" placeholder="Votre objectif de poids">
+                </div>
+                <?php 
+                    if(isset($error)){
+                        echo("<span class='error'>$error</span>");
+                    }
+                ?>
+                <?php 
+                    if(isset($error)){
+                        echo("<span class='succes'>$succes</span>");
+                    }
+                ?>
+                <input type="submit" value="Valider" class="contactButton">
+                <div class="btns">
+                    <button class="btn prev invisible">Precédent</button>
+                    <input type="submit" value="Valider" class="submit invisible">
+                    <button class="btn next invisible">Suivant</button>
+                </div>
+            </form>
         </div>
 
         <div class="rightContactContent">

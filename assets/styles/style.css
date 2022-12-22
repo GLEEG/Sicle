@@ -388,10 +388,91 @@ a{
     align-items: center;
 }
 
+.checkbox{
+    display: flex;
+    align-items: center;
+}
+
+label{
+    color:#FFF
+}
+
+#completeSubscription{
+    display: inline;
+    margin: 0 6px 0 0;
+}
+
+
+
+.show{
+    display: block;
+}
+
+.invisible{
+    visibility: hidden;
+}
+.visible{
+    visibility: visible;
+}
+
+.showFlex{
+    display: flex;
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+}
+
+label{
+    color:#FFF
+}
+
+#completeSubscription{
+    display: inline;
+    margin: 0 6px 0 0;
+}
+
+
+
+.show{
+    display: block;
+}
+
+.invisible{
+    visibility: hidden;
+}
+.visible{
+    visibility: visible;
+}
+
+.showFlex{
+    display: flex;
+}
+
 .contact{
     width: 100%;
     height: 100vh;
     display: flex;
+}
+
+.error{
+    color: red;
+    font-size: 13px;
+}
+.succes{
+    color: #fff;
+    font-size: 13px;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn{
+    background: #FFF;
 }
 
 .leftContactContent{
@@ -403,7 +484,7 @@ a{
     justify-content: space-between;
     padding-left: 64px;
     padding-right: 64px;
-    padding-top: 256px;
+    padding-top: 128px;
     padding-bottom: 256px;
 }
 
@@ -415,22 +496,14 @@ a{
     font-display: swap;
 }
 
-input[type="email"]{
+input{
     display: flex;
     align-items: center;
     height: 32px;
     padding-left: 8px;
     color: #FFFFFF;
     border-bottom: 1px solid #909CAA;
-}
-
-input[type="text"]{
-    display: flex;
-    align-items: center;
-    height: 32px;
-    padding-left: 8px;
-    color: #FFFFFF;
-    border-bottom: 1px solid #909CAA;
+    margin: 16px 0;
 }
 
 
@@ -447,11 +520,16 @@ input[type="text"]{
     font-display: swap;
     transform: scale(1);
     transition: ease-out 200ms;
+
 }
 
 .contactButton:hover{
     transform: scale(1.1);
     transition: ease-out 200ms;
+}
+
+.hidden{
+    display: none;
 }
 
 .rightContactContent{
