@@ -34,6 +34,8 @@ class UserManager{
         $req->bindValue(":weight_goal", $user->getWeightGoal());
         $req->bindValue(":sicoins", $user->getSiCoins());
         $req->bindValue(":is_admin", $user->getIsAdmin());
+
+        $req->execute();
     }
     public function get(int $id){
         $req = $this->db->prepare("SELECT * FROM `user` WHERE id=:id");
