@@ -299,7 +299,8 @@
         $user->hydrate($_POST);
 
         $manager = new UserManager();
-        // $manager->
+        $manager->add($user);
+        var_dump($manager->getAll())
     }
 ?>
 <!DOCTYPE html>
