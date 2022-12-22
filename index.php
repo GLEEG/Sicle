@@ -480,7 +480,7 @@
         </div>
     </div>
 
-    <?php if($MODE == 'DEV') { ?>
+    <?php if(MODE == 'DEV') { ?>
         <script src="http://localhost:35729/livereload.js"></script>
     <?php } ?>
 
