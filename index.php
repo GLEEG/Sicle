@@ -363,7 +363,7 @@
                 <a href="#sicleDefinitionAnchor" class="buttons">A propos</a>
                 <a href="#promotionalVideoAnchor" class="buttons">Vidéo promotionnelle</a>
                 <a href="#previewExperienceAnchor" class="buttons">Experience</a>
-                <a href="#" class="buttons">L'équipe</a>
+                <a href="#teamAnchor" class="buttons">L'équipe</a>
                 <a href="#contactAnchor" class="buttons">Contact</a>
             </div>
         </div>
@@ -521,6 +521,87 @@
 
         <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FMie8JSDdfTnp2CHjPlyYZr%2FAPPLI-MOBILE---SICLE-%25F0%259F%2593%25B1%3Fpage-id%3D424%253A1415%26node-id%3D424%253A1416%26viewport%3D947%252C318%252C0.27%26scaling%3Dscale-down%26starting-point-node-id%3D526%253A2627" allowfullscreen></iframe>
 
+    </div>
+
+    <!-- Team -->
+    <div id="teamAnchor" class="team centered">
+        <h2 class="boldItalic">L'équipe 🤝</h2>
+
+        <div class="allCardsTeam">
+            <div class="cardTeam cardAyman">
+
+                <div class="name boldItalic">Ayman Benammour</div>
+
+                <div class="links">
+                    
+                    <div class="linkedinLink">
+                        <a class="buttons" href="https://www.linkedin.com/in/ayman-benammou" target="_blank">LinkedIn</a> 
+                        <img class="logoLink" src="./assets/images/logoLinkedIn.svg" alt="LinkedIn logo">
+                    </div>
+
+                    <div class="githubLink">
+                        <a class="buttons" href="https://github.com/ayman-benammour" target="_blank">GitHub</a> 
+                        <img class="logoLink" src="./assets/images/logoGitHub.svg" alt="GitHub logo">
+                    </div>
+
+                    <div class="portfolioLink">
+                        <a class="buttons" href="https://ayman-benammour.com" target="_blank">Portfolio</a> 
+                        <img class="logoLink" src="./assets/images/iconPortfolio.svg" alt="Portfolio logo">
+                    </div>
+
+                </div>
+
+                <img class="avatar avatarAyman" src="./assets/images/avatar3dAyman.png" alt="">
+                <img class="photo photoAyman" src="./assets/images/photoAyman.png" alt="">
+
+            </div>
+
+            <!-- Kylian -->
+            <div class="cardTeam cardKylian">
+
+                <div class="name boldItalic">Kylian Alger</div>
+
+                <div class="links">
+                    
+                    <div class="linkedinLink">
+                        <a class="buttons" href="https://www.linkedin.com/in/kylian-alger" target="_blank">LinkedIn</a> 
+                        <img class="logoLink" src="./assets/images/logoLinkedIn.svg" alt="LinkedIn logo">
+                    </div>
+
+                    <div class="githubLink">
+                        <a class="buttons" href="https://github.com/Kylian-Alger" target="_blank">GitHub</a> 
+                        <img class="logoLink" src="./assets/images/logoGitHub.svg" alt="GitHub logo">
+                    </div>
+
+                </div>
+
+                <img class="avatar" src="./assets/images/avatar3dKylian.png" alt="">
+                <img class="photo" src="./assets/images/photoKylian.png" alt="">
+            </div>
+
+            <div class="cardTeam cardMaxime">
+
+                <div class="name boldItalic">Maxime Baron</div>
+
+                <div class="links">
+                    
+                    <div class="linkedinLink">
+                        <a class="buttons" href="https://www.linkedin.com/in/baron-maxime/" target="_blank">LinkedIn</a> 
+                        <img class="logoLink" src="./assets/images/logoLinkedIn.svg" alt="LinkedIn logo">
+                    </div>
+
+                    <div class="githubLink">
+                        <a class="buttons" href="https://github.com/maxime-baron" target="_blank">GitHub</a> 
+                        <img class="logoLink" src="./assets/images/logoGitHub.svg" alt="GitHub logo">
+                    </div>
+
+                </div>
+
+                <img class="avatar" src="./assets/images/avatar3dMaxime.png" alt="">
+                <img class="photo" src="./assets/images/photoMaxime.png" alt="">
+            </div>
+            </div>
+        </div>
     </div>
 
     <!-- Contact -->
