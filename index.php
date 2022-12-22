@@ -465,7 +465,7 @@
                     </select>
                 </div>
                 <div class="goal hidden">
-                    <input type="number" name="weightGoal" id="weightGoal" placeholder="Votre objectif de poids">
+                    <input type="number" name="weightGoal" id="weightGoal" step="0.01" placeholder="Votre objectif de poids">
                 </div>
                 <?php 
                     if(isset($error)){
