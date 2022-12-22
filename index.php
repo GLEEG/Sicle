@@ -613,7 +613,7 @@
                 <p>Restez informé grâce à notre newsletter.</p>
             </div>
             <!-- action="#"  -->
-            <form method="post">
+            <form method="post" action="#">
                 <input type="email" placeholder="Email" name="email" id="email">
                 <div class="checkbox">
                     <input type="checkbox" name="completeSubscription" id="completeSubscription">
