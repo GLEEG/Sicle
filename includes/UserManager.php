@@ -34,7 +34,7 @@ class UserManager{
         $req->bindValue(":is_admin", $user->getIsAdmin());
     }
     public function get(int $id){
-        $req = this->db->prepare("SELECT * FROM `user` WHERE id=:id");
+        $req = $this->db->prepare("SELECT * FROM `user` WHERE id=:id");
         $req = bindValue(":id", $id);
         $req->execute();
         $data = $req->fetch();
@@ -43,7 +43,7 @@ class UserManager{
     }
     public function getAll(){
         $users = [];
-        $req = this->db->prepare("SELECT * FROM `user` ORDER BY username");
+        $req = $this->db->prepare("SELECT * FROM `user` ORDER BY username");
         $req->execute();
         $datas = $req->fetchAll();
         foreach($datas as $data){
