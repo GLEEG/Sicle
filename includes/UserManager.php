@@ -4,12 +4,12 @@ class UserManager{
 
     public function __construct()
     {
-        $dbName = "sicle";
+        $dbName = "t80o0qfns207b2ah";
         $port = 3306;
-        $username = "user";
-        $password = "pass";
+        $username = "c5jacit8b1tibnjh";
+        $password = "un90lh763p3xub0w";
         try{
-            $this->setDb(new PDO("mysql:host=localhost;dbname=$dbName;port=$port;charset=utf8mb4",$username,$password));
+            $this->setDb(new PDO("mysql:host=ilzyz0heng1bygi8.chr7pe7iynqr.eu-west-1.rds.amazonaws.com;dbname=$dbName;port=$port;charset=utf8mb4",$username,$password));
         }catch(PDOException $error){
             echo $error->getMessage();
         }
@@ -75,3 +75,4 @@ class UserManager{
         $req->execute();
     }
 }
+?>

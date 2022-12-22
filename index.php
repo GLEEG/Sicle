@@ -1,5 +1,11 @@
 <?php
-    include_once './includes/devReload.php';
+    error_reporting(E_ALL);
+    ini_set('display_errors',true);
+    function loadClass($class){
+        require_once "includes\\$class.php";
+    }
+    spl_autoload_register("loadClass");
+
 
     function mailing(){
         $message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -285,6 +291,15 @@
         echo $response;
         }
     }
+
+    if(!empty($_POST)){
+        // print_r($_POST);
+        $user = new User();
+        $user->hydrate($_POST);
+
+        $manager = new UserManager();
+        // $manager->
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -427,10 +442,29 @@
             <div class="contactTitle">
                 <p>Restez informé grâce à notre newsletters.</p>
             </div>
-
-            <input type="email" placeholder="EMAIL">
-
-            <button class="contactButton">BLABLABLA</button>
+            <form action="#" method="post">
+                <input type="email" placeholder="Email" name="email" id="email">
+                <label for=""></label>
+                <input type="checkbox" name="completeSubscription" id="completeSubscription">
+                <div class="personnalInfo">
+                    <input type="text" name="username" id="username" placeholder="Nom d'utilisateur">
+                    <input type="number" name="weight" id="weight" placeholder="Poids">
+                    <input type="number" name="height" id="height" placeholder="Taille">
+                    <input type="number" name="age" id="age" placeholder="Age">
+                    <select name="gender" id="gender">
+                        <option value="male">Homme</option>
+                        <option value="female">Femme</option>
+                    </select>
+                </div>
+                <div class="goal">
+                    <input type="number" name="weightGoal" id="weightGoal" placeholder="Votre objectif de poids">
+                </div>
+                <input type="submit" value="Valider" class="contactButton">
+                <div class="btns">
+                    <button class="btn prev">Precédent</button>
+                    <button class="btn next">Suivant</button>
+                </div>
+            </form>
         </div>
         <div class="rightContactContent">
 

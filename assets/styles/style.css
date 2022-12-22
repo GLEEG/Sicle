@@ -286,6 +286,15 @@ body{
     display: flex;
 }
 
+.btns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    background: #FFF;
+}
+
 .leftContactContent{
     width: 576px;
     background-color: #272F38;
@@ -295,7 +304,7 @@ body{
     justify-content: space-between;
     padding-left: 64px;
     padding-right: 64px;
-    padding-top: 256px;
+    padding-top: 128px;
     padding-bottom: 256px;
 }
 
@@ -307,7 +316,16 @@ body{
     font-display: swap;
 }
 
-input[type="email"] {
+input{
+    display: flex;
+    align-items: center;
+    height: 32px;
+    padding-left: 8px;
+    color: #FFFFFF;
+    border-bottom: 1px solid #909CAA;
+    margin: 16px 0;
+}
+/* input[type="email"] {
     display: flex;
     align-items: center;
     height: 32px;
@@ -315,7 +333,7 @@ input[type="email"] {
     color: #FFFFFF;
     border-bottom: 1px solid #909CAA;
 
-}
+} */
 
 .contactButton{
     display: flex;

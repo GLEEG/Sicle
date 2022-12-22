@@ -23,7 +23,7 @@ class User{
     }
     public function setUsername($username){
         if(is_string($username)){
-            $this->gender = $username;
+            $this->username = $username;
         }else{
             return "Value must be a string";
         }
@@ -34,9 +34,9 @@ class User{
     }
     public function setEmail($email){
         if(is_string($email)){
-            $this->gender = $email;
-        }else{
-            return "Value must be a string";
+            $this->email = $email;
+        } else {
+            return "Value must be a date";
         }
     }
 
@@ -93,7 +93,7 @@ class User{
     }
     public function setWeightGoal($weightGoal){
         $weightGoal = (float) $weightGoal;
-        $this->gender = $weightGoal;
+        $this->weightGoal = $weightGoal;
     }
 
     public function getSiCoins(){
@@ -113,35 +113,36 @@ class User{
     }
 
     public function hydrate(array $data){
-        if (isset($donnees['username'])){
-            $this->setUsername($donnees['username']);
+        // var_dump($data);
+        if (isset($data['username'])){
+            $this->setUsername($data['username']);
         }
-        if (isset($donnees['email'])){
-            $this->setEmail($donnees['email']);
+        if (isset($data['email'])){
+            $this->setEmail($data['email']);
         }
-        if (isset($donnees['weight'])){
-            $this->setWeight($donnees['weight']);
+        if (isset($data['weight'])){
+            $this->setWeight($data['weight']);
         }
-        if (isset($donnees['height'])){
-            $this->setHeight($donnees['height']);
+        if (isset($data['height'])){
+            $this->setHeight($data['height']);
         }
-        if (isset($donnees['inscription_date'])){
-            $this->setInscriptionDate($donnees['inscription_date']);
+        if (isset($data['inscription_date'])){
+            $this->setInscriptionDate($data['inscription_date']);
         }
-        if (isset($donnees['age'])){
-            $this->setAge($donnees['age']);
+        if (isset($data['age'])){
+            $this->setAge($data['age']);
         }
-        if (isset($donnees['gender'])){
-            $this->setUsername($donnees['gender']);
+        if (isset($data['gender'])){
+            $this->setUsername($data['gender']);
         }
-        if (isset($donnees['weight_goal'])){
-            $this->setWeightGoal($donnees['weight_goal']);
+        if (isset($data['weightGoal'])){
+            $this->setWeightGoal($data['weightGoal']);
         }
-        if (isset($donnees['sicoins'])){
-            $this->setSiCoins($donnees['sicoins']);
+        if (isset($data['sicoins'])){
+            $this->setSiCoins($data['sicoins']);
         }
-        if (isset($donnees['is_admin'])){
-            $this->setIsAdmin($donnees['is_admin']);
+        if (isset($data['is_admin'])){
+            $this->setIsAdmin($data['is_admin']);
         }
     }
 }
