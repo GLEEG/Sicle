@@ -447,7 +447,8 @@
             <div class="contactTitle">
                 <p>Restez informé grâce à notre newsletters.</p>
             </div>
-            <form action="#" method="post">
+            <!-- action="#"  -->
+            <form method="post">
                 <input type="email" placeholder="Email" name="email" id="email">
                 <label for="completeSubscription">Voulez vous préinscrire ?</label>
                 <input type="checkbox" name="completeSubscription" id="completeSubscription">
