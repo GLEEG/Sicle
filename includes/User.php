@@ -1,17 +1,17 @@
 <?php
 class User{
     private int $id;
-    private string $username;
-    private string $email;
-    private float $weight;
-    private int $height;
+    private $username = NULL;
+    private $email;
+    private $weight = NULL;
+    private $height = NULL;
     private DateTime $inscriptionDate;
-    private int $age;
-    private string $gender;
-    private string $weightGoal;
+    private $age = NULL;
+    private $gender = NULL;
+    private $weightGoal = NULL;
     // private bool $athletic;
-    private int $siCoins;
-    private bool $idAdmin;
+    private $siCoins = NULL;
+    private $idAdmin = NULL;
 
 
     public function getId(){
