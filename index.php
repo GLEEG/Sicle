@@ -310,60 +310,63 @@
 </head> 
 <body>
 
-<div class="landingPageAll">
+    <!-- Landing page -->
+    <div class="landingPageAll">
 
-    <div class="header centered">
-        <div class="logo">Sicle</div>
+        <!-- Header -->
+        <div class="header centered">
+            <div class="logo boldItalic">Sicle</div>
 
             <div class="headerButtons">
-                <a href="#" class="buttons">Vidéo promotionnelle</a>
-                <a href="#" class="buttons">Beta Experience</a>
+                <a href="#sicleDefinitionAnchor" class="buttons">A propos</a>
+                <a href="#promotionalVideoAnchor" class="buttons">Vidéo promotionnelle</a>
+                <a href="#previewExperienceAnchor" class="buttons">Experience</a>
                 <a href="#" class="buttons">L'équipe</a>
-                <a href="#" class="buttons">Contact</a>
+                <a href="#contactAnchor" class="buttons">Contact</a>
             </div>
         </div>
 
+        <!-- Landing -->
         <div class="landingPage centered">
+
             <div class="leftSentences">
                 <div class="upsideText">
-                    <h1>Relève toi et fait mieux !</h1>
+                    <h1>Relève-toi et fais mieux !</h1>
                 </div>
+
                 <div class="underText">
                     <p class="text">« Tout ce qui ne tue pas rend plus fort »</p>
                     <p class="miniText">Nietzsche, philosophe</p>
                 </div>
             </div>
+
             <canvas class="webgl"></canvas>
+
         </div>
 
     </div>
 
-</div>
+    <!-- Section definition -->
+    <div id="sicleDefinitionAnchor" class="firstBlock centered">
 
-    <!-- First section definition -->
-    <div class="firstBlock centered">
-
-        <!-- Card definition -->
         <div class="card blue">
 
-            <!-- A RENOMMER TITLE OF DEFINITION / Name of word -->
             <div class="cardHeader">
-                <!-- A RENOMMER NAME OF WORD / Name of word -->
-                <div class="leftCardHeader">
+
+                <div class="leftCardHeader boldItalic">
                     <h1>Sicle</h1>
-                    <p>n.f</p>
                 </div>
 
                 <img src="./assets/images/quote.svg" alt="quote">
+
             </div>
 
-            <!-- A RENOMMER TEXT OF DEFINITION / Text of definition -->
             <div class="cardBody">
-                    <p>Sicle est une application mobile conçue pour inciter les gens à faire du sport de manière ludique et motivante. 👟</p>
-                    <br>
-                    <p>Grâce à des fonctionnalités innovantes et une interface intuitive, Sicle vous accompagne dans votre parcours de sport et vous encourage à atteindre vos objectifs de santé et de bien-être. 🤝</p>
-                    <br>
-                    <p>Que vous soyez un sportif amateur ou un athlète confirmé, Sicle vous offre une expérience personnalisée et adaptée à vos objectifs. ❤️</p>
+                <p>Sicle est une application mobile conçue pour inciter les gens à faire du sport de manière ludique et motivante. 👟</p>
+                <br>
+                <p>Grâce à des fonctionnalités innovantes et une interface intuitive, Sicle vous accompagne dans votre parcours de sport et vous encourage à atteindre vos objectifs de santé et de bien-être. 🤝</p>
+                <br>
+                <p>Que vous soyez un sportif amateur ou un athlète confirmé, Sicle vous offre une expérience personnalisée et adaptée à vos objectifs. ❤️</p>
             </div>
 
             <!-- A RENOMMER LEGEND / Legend -->
@@ -374,79 +377,95 @@
         </div>
 
         <div class="blockImg cardImage"></div>
+
     </div>
 
     <div class="fifthBlock centered">
+
         <div class="fifthLeftContent">
             <img src="./assets/images/imageApplication.png" alt="application">
         </div>
-        <div class="fifthRightContent">
-            <div class="cardFifthContent">
 
-                <div class="cardHeaderFifthContent">
-                    <h1>MAQUETTE</h1>
+        <div class="card blue">
+
+            <div class="cardHeader">
+
+                <div class="leftCardHeader boldItalic">
+                    <h1>Discipline</h1>
+                    <p>n.f</p>
                 </div>
 
-                <div class="cardBodyFifthBody">
-                    <p>Sicle est conçue pour être facile à utiliser et intuitive, afin que les utilisateurs puissent suivre leur entraînement de manière efficace et atteindre leurs objectifs de fitness.</p>
-                    <br>
-                    <p>Sicle comprend plusieurs écrans, chacun dédié à une tâche spécifique. Nous avons également pris en compte la navigation dans l'application, pour que l'utilisateur puisse accéder facilement aux différentes fonctionnalités.</p>
-                    <br>
-                    <p>Sicle a été conçue pour répondre aux besoins de nos utilisateurs en leur offrant une expérience intuitive et facile d'utilisation.</p>
-                </div>
-
+                <img src="./assets/images/quote.svg" alt="quote">
 
             </div>
-        </div>
-    </div>
 
+            <div class="cardBody">
+                <p>Règle de conduite que l'on s'impose, maîtrise de soi, sens du devoir</p>
+                <br>
+                <p>Il s'astreint à une discipline alimentaire très stricte.</p>
+            </div>
+
+            <!-- A RENOMMER LEGEND / Legend -->
+            <div class="cardFooter">
+                <p>DÉFINITION</p>
+            </div>
+            
+        </div>
+
+    </div>
 
     <div class="secondBlock centered">
-            <div class="cardImage leftCard"></div>
-            <div class="card midCard">
-                <div class="cardHeader">
-                    <div class="leftCardHeader">
-                        <h1>MOTIVATION</h1>
-                        <p>n.f</p>
-                    </div>
-                    <div class="rightCardHeader">
-                        <img src="./assets/images/quote.svg" alt="quote">
-                    </div>
+
+        <div class="cardImage leftCard"></div>
+
+        <div class="card midCard">
+
+            <div class="cardHeader">
+
+                <div class="leftCardHeader boldItalic">
+                    <h1>Motivation</h1>
+                    <p>n.f</p>
                 </div>
 
-                <div class="cardBody">
-                    <p>Raisons, intérêts, éléments qui poussent quelqu'un dans son action.</p>
-                    <br>
-                    <p>Fait pour quelqu'un d'être motivé à agir</p>
+                <div class="rightCardHeader">
+                    <img src="./assets/images/quote.svg" alt="quote">
                 </div>
 
-                <div class="cardFooter">
-                    <p>DÉFINITION</p>
-                </div>
             </div>
-            <div class="cardImage rightCard"></div>
+
+            <div class="cardBody">
+                <p>Raisons, intérêts, éléments qui poussent quelqu'un dans son action.</p>
+                <br>
+                <p>Fait pour quelqu'un d'être motivé à agir</p>
+            </div>
+
+            <div class="cardFooter">
+                <p>DÉFINITION</p>
+            </div>
+
+        </div>
+
+        <div class="cardImage rightCard"></div>
+
     </div>
 
-    <!-- <div class="marquee">
-        <div class="rightMarquee"><marquee scrollamount="30" loop="50" direction="right" behavior="slide">SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE</marquee></div>
-        <div class="rightMarquee"><marquee scrollamount="30" loop="50" direction="left" behavior="slide">SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE</marquee></div>
-        <div class="rightMarquee"><marquee scrollamount="30" loop="50" direction="right" behavior="slide">SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE</marquee></div>
-        <div class="rightMarquee"><marquee scrollamount="30" loop="50" direction="left" behavior="slide">SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE SICLE</marquee></div>
-    </div> -->
+    <!-- Promotional video -->
+    <div id="promotionalVideoAnchor" class="thirdBlock centered">
 
-
-    <div class="thirdBlock centered">
-        <div class="title">
-            VIDEO PROMOTIONNEL
+        <div class="title boldItalic">
+            VIDÉO PROMOTIONNELLE
         </div>
 
         <div class="youtubeVideo">
             <!-- <video src="#"></video> -->
         </div>
+
     </div>
-    
-    <div class="fourthBlock centered">
-        <div class="titleFigma">
+
+    <!-- Experience Figma -->
+    <div id="previewExperienceAnchor" class="fourthBlock centered">
+
+        <div class="titleFigma boldItalic">
             Testez en avant-premiere le fonctionnement de l’application via un prototype Figma
         </div>
 
@@ -457,13 +476,17 @@
             <br>
             <p>Cette expérience vous offrira une meilleure compréhension de ce que nous proposons 🤝</p>
         </div>
-        
+
         <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FMie8JSDdfTnp2CHjPlyYZr%2FAPPLI-MOBILE---SICLE-%25F0%259F%2593%25B1%3Fpage-id%3D424%253A1415%26node-id%3D424%253A1416%26viewport%3D947%252C318%252C0.27%26scaling%3Dscale-down%26starting-point-node-id%3D526%253A2627" allowfullscreen></iframe>
+
     </div>
 
-    <div class="contact">
+    <!-- Contact -->
+    <div id="contactAnchor" class="contact">
+
         <div class="leftContactContent">
-            <div class="contactTitle">
+
+            <div class="contactTitle boldItalic">
                 <p>Restez informé grâce à notre newsletter.</p>
             </div>
 
@@ -474,9 +497,10 @@
             <input type="text" class="hidden" placeholder="Genre">
             <input type="text" class="hidden" placeholder="Objectif">
 
+            <button class="contactButton">Suivant</button>
 
-            <button class="contactButton">Button</button>
         </div>
+
         <div class="rightContactContent">
 
             <div class="uperText">
@@ -488,11 +512,10 @@
             </div>
             
         </div>
+
     </div>
 
-
-
-
+    <!-- Scripts -->
     <?php if(MODE == 'DEV') { ?>
         <script src="http://localhost:35729/livereload.js"></script>
     <?php } ?>

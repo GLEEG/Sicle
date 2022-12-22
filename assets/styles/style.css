@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* Fonts */
 @font-face {
     font-family: 'Gilroy';
@@ -19,19 +23,19 @@
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('../fonts/gilroy/gilroyMedium.woff2') format('woff2'),
-        url('../fonts/gilroy/gilroyMedium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
+    src: url('../fonts/gilroy/gilroyRegularItalic.woff2') format('woff2'),
+        url('../fonts/gilroy/gilroyRegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('../fonts/gilroy/gilroyMediumItalic.woff2') format('woff2'),
-        url('../fonts/gilroy/gilroyMediumItalic.woff') format('woff');
-    font-weight: 500;
-    font-style: italic;
+    src: url('../fonts/gilroy/gilroyRegular.woff2') format('woff2'),
+        url('../fonts/gilroy/gilroyRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
     font-display: swap;
 }
 
@@ -68,6 +72,13 @@ a{
     cursor: pointer;
 }
 
+.boldItalic
+{
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
 .centered{
     display: flex;
     justify-content: center;
@@ -81,7 +92,7 @@ a{
 .header{
     display: flex;
     justify-content: space-between;
-    margin-top: 32px;    
+    margin-top: 32px;
 }
 
 .marquee{
@@ -94,8 +105,6 @@ a{
     background-color: #272F38;
     overflow: hidden;
 }
-
-
 
 .rightMarquee{
     width: 100%;
@@ -358,6 +367,8 @@ a{
     height: 500px;
     display: flex;
     gap: 32px;
+    justify-content: space-between; 
+    align-items: center;
 }
 
 .fifthLeftContent{
