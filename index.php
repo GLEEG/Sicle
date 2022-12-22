@@ -450,19 +450,21 @@
             <!-- action="#"  -->
             <form method="post">
                 <input type="email" placeholder="Email" name="email" id="email">
-                <label for="completeSubscription">Voulez vous préinscrire ?</label>
-                <input type="checkbox" name="completeSubscription" id="completeSubscription">
-                <div class="personnalInfo">
+                <div class="checkbox">
+                    <input type="checkbox" name="completeSubscription" id="completeSubscription">
+                    <label for="completeSubscription">Voulez vous pré-inscrire ?</label>
+                </div>
+                <div class="personnalInfo hidden">
                     <input type="text" name="username" id="username" placeholder="Nom d'utilisateur">
                     <input type="number" name="weight" id="weight" placeholder="Poids">
-                    <input type="number" name="height" id="height" placeholder="Taille">
+                    <input type="number" name="height" id="height" placeholder="Taille (cm)">
                     <input type="number" name="age" id="age" placeholder="Age">
                     <select name="gender" id="gender">
                         <option value="male">Homme</option>
                         <option value="female">Femme</option>
                     </select>
                 </div>
-                <div class="goal">
+                <div class="goal hidden">
                     <input type="number" name="weightGoal" id="weightGoal" placeholder="Votre objectif de poids">
                 </div>
                 <?php 
@@ -477,8 +479,9 @@
                 ?>
                 <input type="submit" value="Valider" class="contactButton">
                 <div class="btns">
-                    <button class="btn prev">Precédent</button>
-                    <button class="btn next">Suivant</button>
+                    <button class="btn prev invisible">Precédent</button>
+                    <input type="submit" value="Valider" class="submit invisible">
+                    <button class="btn next invisible">Suivant</button>
                 </div>
             </form>
         </div>
