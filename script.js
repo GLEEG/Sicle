@@ -2,6 +2,16 @@ import './assets/js/form.js'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
+import * as dat from 'lil-gui'
+
+/**
+ * Debug
+ */
+const gui = new dat.GUI()
+gui.hide()
+
+if(window.location.hash === '#debug')
+    gui.show()
 
 /**
  * Base
@@ -89,9 +99,14 @@ window.addEventListener('resize', () =>
  * Camera
  */
 // Base camera
+const cameraGroup = new THREE.Group()
+scene.add(cameraGroup)
+
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100)
 camera.position.set(2, 0, 2)
-scene.add(camera)
+cameraGroup.add(camera)
+
+gui.add(cameraGroup.position, 'x').min(- 5).max(5).step(0.001)  
 
 // Controls
 const controls = new OrbitControls(camera, canvas)
@@ -115,15 +130,89 @@ renderer.setSize(sizes.width, sizes.height)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 
 /**
+ * Rotation of logo
+ */
+let rotationLogoValue = 0.7
+
+/**
+ * Konami code
+ */
+console.log('↑ ↑ ↓ ↓ ← → ← → B A')
+// a key map of allowed keys
+const allowedKeys = {
+    37: 'left',
+    38: 'up',
+    39: 'right',
+    40: 'down',
+    65: 'a',
+    66: 'b'
+}
+
+// the 'official' Konami Code sequence
+const konamiCode = ['up', 'up', 'down', 'down', 'left', 'right', 'left', 'right', 'b', 'a'];
+
+// a variable to remember the 'position' the user has reached so far.
+let konamiCodePosition = 0;
+
+// add keydown event listener
+document.addEventListener('keydown', (event) => {
+  // get the value of the key code from the key map
+  const key = allowedKeys[event.keyCode];
+  // get the value of the required key from the konami code
+  let requiredKey = konamiCode[konamiCodePosition];
+
+  // compare the key with the required key
+  if (key == requiredKey) {
+
+    // move to the next key in the konami code sequence
+    konamiCodePosition++;
+
+    // if the last key is reached, activate cheats
+    if (konamiCodePosition == konamiCode.length) {
+      activateCheats();
+      konamiCodePosition = 0;
+    }
+  } else {
+    konamiCodePosition = 0;
+  }
+});
+
+function activateCheats() {
+    rotationLogoValue = rotationLogoValue + 20
+}
+
+/**
+ * Cursor
+ */
+const cursor = {}
+cursor.x = 0
+cursor.y = 0
+
+window.addEventListener('mousemove', (event) =>
+{
+    cursor.x = event.clientX / window.innerWidth - 0.5
+    cursor.y = event.clientY / window.innerHeight - 0.5
+})
+
+/**
  * Animate
  */
 const clock = new THREE.Clock()
+let previousTime = 0
 
 const tick = () =>
 {
     const elapsedTime = clock.getElapsedTime()
+    const deltaTime = elapsedTime - previousTime
+    previousTime = elapsedTime
 
-    logo.rotation.y = - elapsedTime * 0.7
+    const parallaxX = cursor.x * 1
+    const parallaxY = - cursor.y * 1
+    logo.position.x += (- parallaxX - logo.position.x) * 1 * deltaTime
+    logo.position.z += (parallaxX - logo.position.z) * 1 * deltaTime
+    logo.position.y += (- parallaxY - logo.position.y) * 1 * deltaTime
+
+    logo.rotation.y = - elapsedTime * rotationLogoValue
 
     // Update controls
     controls.update()

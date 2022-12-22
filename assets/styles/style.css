@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* Fonts */
 @font-face {
     font-family: 'Gilroy';
@@ -19,27 +23,40 @@
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('../fonts/gilroy/gilroyMedium.woff2') format('woff2'),
-        url('../fonts/gilroy/gilroyMedium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
+    src: url('../fonts/gilroy/gilroyRegularItalic.woff2') format('woff2'),
+        url('../fonts/gilroy/gilroyRegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('../fonts/gilroy/gilroyMediumItalic.woff2') format('woff2'),
-        url('../fonts/gilroy/gilroyMediumItalic.woff') format('woff');
-    font-weight: 500;
-    font-style: italic;
+    src: url('../fonts/gilroy/gilroyRegular.woff2') format('woff2'),
+        url('../fonts/gilroy/gilroyRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
     font-display: swap;
 }
 
+/* Media query */
 @media (min-width: 1440px){
     .centered{
         width: 1440px !important;
     }
 }
+
+/* Keyframe */
+@keyframes rightMarquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  @keyframes leftMarquee {
+    from { transform: translateX(-50%); }
+    to { transform: translateX(0); }
+  }
+
 
 /* General */
 body{
@@ -49,7 +66,17 @@ body{
     flex-direction: column;
     justify-content: center;
     gap: 128px;
-    color: #272F38;
+}
+
+a{
+    cursor: pointer;
+}
+
+.boldItalic
+{
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
 }
 
 .centered{
@@ -65,7 +92,71 @@ body{
 .header{
     display: flex;
     justify-content: space-between;
-    margin-top: 32px;    
+    margin-top: 32px;
+}
+
+.marquee{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    font-size: 32px;
+    background-color: #272F38;
+    overflow: hidden;
+}
+
+.rightMarquee{
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.leftMarquee{
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.stop{
+    width: 100%;
+}
+
+.buttons::before{
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+.buttons:hover::before{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.buttons::before{
+    content: " ";
+    display: block;
+    position: absolute;
+    top: -7px; right: -12px; bottom: 0; left: -12px;
+    background: #272F38;
+    z-index: -1;
+    border-radius: 100px;
+    transition: transform .3s ease;
+    height: 30px;
+}
+
+.buttons{
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    transition: all 0.2s ease-out;
+}
+
+.buttons:hover{
+    color: #FFFFFF;
 }
 
 .logo{
@@ -173,8 +264,7 @@ body{
 }
 
 .cardBody{
-    width: 294px;
-    height: 120px;
+    width: 330px;
     font-size: 20px;
     font-weight: 500;
 }
@@ -207,9 +297,21 @@ body{
     gap: 33px;
 }
 
-.title{
+.thirdBlock .title{
     font-size: 32px;
     font-weight: bold;
+}
+
+.titleFigma{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.text{
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 
 .banner{
@@ -233,8 +335,8 @@ body{
 .fourthBlock{
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    align-items: flex-end;
+    gap: 32px;
+    width: 100%;
 }
 
 .galerieHeader{
@@ -264,6 +366,9 @@ body{
     width: 100%;
     height: 500px;
     display: flex;
+    gap: 32px;
+    justify-content: space-between; 
+    align-items: center;
 }
 
 .fifthLeftContent{
@@ -275,9 +380,43 @@ body{
 
 
 .fifthRightContent{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
     height: 100%;
-    background-color: red;
+    align-items: center;
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+}
+
+label{
+    color:#FFF
+}
+
+#completeSubscription{
+    display: inline;
+    margin: 0 6px 0 0;
+}
+
+
+
+.show{
+    display: block;
+}
+
+.invisible{
+    visibility: hidden;
+}
+.visible{
+    visibility: visible;
+}
+
+.showFlex{
+    display: flex;
 }
 
 .checkbox{
@@ -366,15 +505,7 @@ input{
     border-bottom: 1px solid #909CAA;
     margin: 16px 0;
 }
-/* input[type="email"] {
-    display: flex;
-    align-items: center;
-    height: 32px;
-    padding-left: 8px;
-    color: #FFFFFF;
-    border-bottom: 1px solid #909CAA;
 
-} */
 
 .contactButton{
     display: flex;
@@ -387,6 +518,14 @@ input{
     font-weight: bold;
     font-style: italic;
     font-display: swap;
+    transform: scale(1);
+    transition: ease-out 200ms;
+
+}
+
+.contactButton:hover{
+    transform: scale(1.1);
+    transition: ease-out 200ms;
 }
 
 .hidden{
@@ -433,37 +572,35 @@ input{
     font-weight: bold;
 }
 
-.buttons::before{
-    transform: scaleX(0);
-    transform-origin: bottom right;
+
+.hidden{
+    display: none !important; 
 }
 
-.buttons:hover::before{
-    transform: scaleX(1);
-    transform-origin: bottom left;
+.cardFifthContent{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    flex-shrink: 0;
+    width: 80%;
+    height: 100%;
+    border-radius: 8px;
 }
 
-.buttons::before{
-    content: " ";
-    display: block;
-    position: absolute;
-    top: -7px; right: -12px; bottom: 0; left: -12px;
-    background: #272F38;
-    z-index: -1;
-    border-radius: 100px;
-    transition: transform .3s ease;
-    height: 30px;
-}
-
-.buttons{
-    position: relative;
-    text-decoration: none;
+.cardHeaderFifthContent h1{
+    font-size: 32px;
     font-weight: bold;
-    font-style: italic;
-    text-transform: uppercase;
-    transition: all 0.2s ease-out;
 }
 
-.buttons:hover{
-    color: #FFFFFF;
+.cardBodyFifthBody{
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+iframe{
+    width: 100%;
+    height: 715px;
+    border: 1px solid #272F38;
 }

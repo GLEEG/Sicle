@@ -309,65 +309,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-252574533-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-252574533-2');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WBB7MXG');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>webpack php</title>
+    <title>Sicle - L'application mobile ludique et motivante</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#272f38">
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="./assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!-- CSS -->
     <link rel="stylesheet" href="./assets/styles/reset.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
-    <!-- <link rel="stylesheet" href="./assets/styles/cursor.css"> -->
     <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head> 
 <body>
 
-<div class="landingPageAll">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WBB7MXG"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-    <div class="header centered">
-        <div class="logo">Sicle</div>
+    <!-- Landing page -->
+    <div class="landingPageAll">
+
+        <!-- Header -->
+        <div class="header centered">
+            <div class="logo boldItalic">Sicle</div>
 
             <div class="headerButtons">
-                <a href="#" class="buttons">Vidéo promotionnelle</a>
-                <a href="#" class="buttons">Beta Experience</a>
+                <a href="#sicleDefinitionAnchor" class="buttons">A propos</a>
+                <a href="#promotionalVideoAnchor" class="buttons">Vidéo promotionnelle</a>
+                <a href="#previewExperienceAnchor" class="buttons">Experience</a>
                 <a href="#" class="buttons">L'équipe</a>
-                <a href="#" class="buttons">Contact</a>
+                <a href="#contactAnchor" class="buttons">Contact</a>
             </div>
         </div>
 
+        <!-- Landing -->
         <div class="landingPage centered">
+
             <div class="leftSentences">
                 <div class="upsideText">
-                    <h1>Relève toi et fait mieux !</h1>
+                    <h1>Relève-toi et fais mieux !</h1>
                 </div>
+
                 <div class="underText">
                     <p class="text">« Tout ce qui ne tue pas rend plus fort »</p>
                     <p class="miniText">Nietzsche, philosophe</p>
                 </div>
             </div>
+
             <canvas class="webgl"></canvas>
+
         </div>
 
     </div>
 
-</div>
+    <!-- Section definition -->
+    <div data-aos="fade-up" id="sicleDefinitionAnchor" class="firstBlock centered">
 
-    <!-- First section definition -->
-    <div class="firstBlock centered">
-
-        <!-- Card definition -->
         <div class="card blue">
 
-            <!-- A RENOMMER TITLE OF DEFINITION / Name of word -->
             <div class="cardHeader">
-                <!-- A RENOMMER NAME OF WORD / Name of word -->
-                <div class="leftCardHeader">
-                    <h1>DISCIPLINE</h1>
+
+                <div class="leftCardHeader boldItalic">
+                    <h1>Sicle</h1>
+                </div>
+
+                <img src="./assets/images/quote.svg" alt="quote">
+
+            </div>
+
+            <div class="cardBody">
+                <p>Sicle est une application mobile conçue pour inciter les gens à faire du sport de manière ludique et motivante. 👟</p>
+                <br>
+                <p>Grâce à des fonctionnalités innovantes et une interface intuitive, Sicle vous accompagne dans votre parcours de sport et vous encourage à atteindre vos objectifs de santé et de bien-être. 🤝</p>
+                <br>
+                <p>Que vous soyez un sportif amateur ou un athlète confirmé, Sicle vous offre une expérience personnalisée et adaptée à vos objectifs. ❤️</p>
+            </div>
+
+            <!-- A RENOMMER LEGEND / Legend -->
+            <div class="cardFooter">
+                <p>DÉFINITION</p>
+            </div>
+            
+        </div>
+
+        <div class="blockImg cardImage"></div>
+
+    </div>
+
+    <div data-aos="fade-up" class="fifthBlock centered">
+
+        <div class="fifthLeftContent">
+            <img src="./assets/images/imageApplication.png" alt="application">
+        </div>
+
+        <div class="card blue">
+
+            <div class="cardHeader">
+
+                <div class="leftCardHeader boldItalic">
+                    <h1>Discipline</h1>
                     <p>n.f</p>
                 </div>
 
                 <img src="./assets/images/quote.svg" alt="quote">
+
             </div>
 
-            <!-- A RENOMMER TEXT OF DEFINITION / Text of definition -->
             <div class="cardBody">
                 <p>Règle de conduite que l'on s'impose, maîtrise de soi, sens du devoir</p>
                 <br>
@@ -381,71 +454,82 @@
             
         </div>
 
-        <div class="blockImg cardImage"></div>
     </div>
 
-    <div class="secondBlock centered">
-            <div class="cardImage leftCard"></div>
-            <div class="card midCard">
-                <div class="cardHeader">
-                    <div class="leftCardHeader">
-                        <h1>MOTIVATION</h1>
-                        <p>n.f</p>
-                    </div>
-                    <div class="rightCardHeader">
-                        <img src="./assets/images/quote.svg" alt="quote">
-                    </div>
+    <div data-aos="fade-up" class="secondBlock centered">
+
+        <div class="cardImage leftCard"></div>
+
+        <div class="card midCard">
+
+            <div class="cardHeader">
+
+                <div class="leftCardHeader boldItalic">
+                    <h1>Motivation</h1>
+                    <p>n.f</p>
                 </div>
 
-                <div class="cardBody">
-                    <p>Raisons, intérêts, éléments qui poussent quelqu'un dans son action.</p>
-                    <p>Fait pour quelqu'un d'être motivé à agir</p>
+                <div class="rightCardHeader">
+                    <img src="./assets/images/quote.svg" alt="quote">
                 </div>
 
-                <div class="cardFooter">
-                    <p>DÉFINITION</p>
-                </div>
             </div>
-            <div class="cardImage rightCard"></div>
+
+            <div class="cardBody">
+                <p>Raisons, intérêts, éléments qui poussent quelqu'un dans son action.</p>
+                <br>
+                <p>Fait pour quelqu'un d'être motivé à agir</p>
+            </div>
+
+            <div class="cardFooter">
+                <p>DÉFINITION</p>
+            </div>
+
+        </div>
+
+        <div class="cardImage rightCard"></div>
+
     </div>
 
-    <div class="banner"></div>
+    <!-- Promotional video -->
+    <div data-aos="fade-up" id="promotionalVideoAnchor" class="thirdBlock centered">
 
-    <div class="thirdBlock centered">
-        <div class="title">
-            VIDEO PROMOTIONNEL
+        <div class="title boldItalic">
+            VIDÉO PROMOTIONNELLE
         </div>
 
         <div class="youtubeVideo">
             <!-- <video src="#"></video> -->
         </div>
-    </div>
-    
 
-    <!-- <div class="fourthBlock">
-        <div class="galerieHeader">
-            <div class="title">GALERIE</div>
-            <div class="arrow">
-                <img src="./assets/images/leftArrow.svg" alt="leftArrow">
-                <img src="./assets/images/rightArrow.svg" alt="rightArrow">
-            </div>
-        </div>
-
-        <div class="galerieBody">
-        </div>
-    </div> -->
-
-    <div class="fifthBlock centered">
-        <div class="fifthLeftContent">
-            <img src="./assets/images/imageApplication.png" alt="application">
-        </div>
-        <div class="fifthRightContent"></div>
     </div>
 
-    <div class="contact">
+    <!-- Experience Figma -->
+    <div data-aos="fade-up" id="previewExperienceAnchor" class="fourthBlock centered">
+
+        <div class="titleFigma boldItalic">
+            Testez en avant-premiere le fonctionnement de l’application via un prototype Figma
+        </div>
+
+        <div class="text">
+            <p>Essayer l'expérience Sicle en interagissant avec le prototype ci-dessous 👇</p>
+            <br>
+            <p>Grâce aux maquettes Figma que nous avons designé et prototypé, vous pouvez naviguer de manière interactive dans linterface et découvrir les fonctionnalités en temps réel 📱</p>
+            <br>
+            <p>Cette expérience vous offrira une meilleure compréhension de ce que nous proposons 🤝</p>
+        </div>
+
+        <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FMie8JSDdfTnp2CHjPlyYZr%2FAPPLI-MOBILE---SICLE-%25F0%259F%2593%25B1%3Fpage-id%3D424%253A1415%26node-id%3D424%253A1416%26viewport%3D947%252C318%252C0.27%26scaling%3Dscale-down%26starting-point-node-id%3D526%253A2627" allowfullscreen></iframe>
+
+    </div>
+
+    <!-- Contact -->
+    <div id="contactAnchor" class="contact">
+
         <div class="leftContactContent">
-            <div class="contactTitle">
-                <p>Restez informé grâce à notre newsletters.</p>
+
+            <div class="contactTitle boldItalic">
+                <p>Restez informé grâce à notre newsletter.</p>
             </div>
             <!-- action="#"  -->
             <form method="post">
@@ -485,6 +569,7 @@
                 </div>
             </form>
         </div>
+
         <div class="rightContactContent">
 
             <div class="uperText">
@@ -496,8 +581,10 @@
             </div>
             
         </div>
+
     </div>
 
+    <!-- Scripts -->
     <?php if(MODE == 'DEV') { ?>
         <script src="http://localhost:35729/livereload.js"></script>
     <?php } ?>
@@ -511,6 +598,11 @@
     </script>
 
     <script src="./assets/js/bundle.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init()
+    </script>
 
 </body>
 </html>
