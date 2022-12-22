@@ -45,6 +45,14 @@ class UserManager{
         $user = new User($data);
         return $user;
     }
+    public function getByEmail(string $email){
+        $req = $this->db->prepare("SELECT * FROM `user` WHERE email=:email");
+        $req = bindValue(":email", $email);
+        $req->execute();
+        $data = $req->fetch();
+        $user = new User($data);
+        return $user;
+    }
     public function getAll(){
         $users = [];
         $req = $this->db->prepare("SELECT * FROM `user` ORDER BY username");

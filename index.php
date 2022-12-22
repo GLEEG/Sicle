@@ -8,7 +8,7 @@
     spl_autoload_register("loadClass");
 
 
-    function mailing(){
+    function mailing($email){
         $message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
         <html data-editor-version="2" class="sg-campaigns" xmlns="http://www.w3.org/1999/xhtml">
             <head>
@@ -243,7 +243,7 @@
             array(
             "to" => array(
                 array(
-                "email" => 'maximebaron93@gmail.com'
+                "email" => $email
                 )
             ),
             "subject" => 'BIENVENUE SUR SICLE'
@@ -295,13 +295,19 @@
     $_POST['gender'] = NULL;
     // var_dump($_POST);
     if(!empty($_POST)){
-        // print_r($_POST);
-        $user = new User();
-        $user->hydrate($_POST);
-
+        //Definition du manger
         $manager = new UserManager();
-        $manager->add($user);
-        var_dump($manager->getAll());
+        $user = $manager->getByEmail($_POST['email']);
+        if(!empty($user)){
+            $user = new User();
+            $user->hydrate($_POST);
+
+            $manager->add($user);
+            mailing($user->getEmail());
+            $succes = "Adresse bien enregistrée vous recevrez un mail dans quelques instants";
+        }else{
+            $error = "L'adresse mail existe déjà";
+        }
     }
 ?>
 <!DOCTYPE html>
@@ -462,6 +468,16 @@
                 <div class="goal">
                     <input type="number" name="weightGoal" id="weightGoal" placeholder="Votre objectif de poids">
                 </div>
+                <?php 
+                    if(isset($error)){
+                        echo("<span class='error'>$error</span>");
+                    }
+                ?>
+                <?php 
+                    if(isset($error)){
+                        echo("<span class='succes'>$succes</span>");
+                    }
+                ?>
                 <input type="submit" value="Valider" class="contactButton">
                 <div class="btns">
                     <button class="btn prev">Precédent</button>

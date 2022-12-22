@@ -286,6 +286,13 @@ body{
     display: flex;
 }
 
+.error{
+    color: red;
+}
+.succes{
+    color: #fff;
+}
+
 .btns{
     display: flex;
     justify-content: space-between;
