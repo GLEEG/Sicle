@@ -49,7 +49,7 @@ class UserManager{
         $req->bindValue(":email", $email);
         $req->execute();
         $data = $req->fetch();
-        var_dump("data".$data);
+        var_dump($data);
         $user = new User($data);
         return $user;
     }
