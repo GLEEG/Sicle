@@ -314,9 +314,19 @@
     <link rel="stylesheet" href="./assets/styles/reset.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
-    <?php include_once './includes/gManager.php' ?>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head> 
 <body>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B2THMC3FWW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-B2THMC3FWW');
+    </script>
 
     <!-- Landing page -->
     <div class="landingPageAll">
@@ -355,7 +365,7 @@
     </div>
 
     <!-- Section definition -->
-    <div id="sicleDefinitionAnchor" class="firstBlock centered">
+    <div data-aos="fade-up" id="sicleDefinitionAnchor" class="firstBlock centered">
 
         <div class="card blue">
 
@@ -388,7 +398,7 @@
 
     </div>
 
-    <div class="fifthBlock centered">
+    <div data-aos="fade-up" class="fifthBlock centered">
 
         <div class="fifthLeftContent">
             <img src="./assets/images/imageApplication.png" alt="application">
@@ -422,7 +432,7 @@
 
     </div>
 
-    <div class="secondBlock centered">
+    <div data-aos="fade-up" class="secondBlock centered">
 
         <div class="cardImage leftCard"></div>
 
@@ -458,7 +468,7 @@
     </div>
 
     <!-- Promotional video -->
-    <div id="promotionalVideoAnchor" class="thirdBlock centered">
+    <div data-aos="fade-up" id="promotionalVideoAnchor" class="thirdBlock centered">
 
         <div class="title boldItalic">
             VIDÉO PROMOTIONNELLE
@@ -471,7 +481,7 @@
     </div>
 
     <!-- Experience Figma -->
-    <div id="previewExperienceAnchor" class="fourthBlock centered">
+    <div data-aos="fade-up" id="previewExperienceAnchor" class="fourthBlock centered">
 
         <div class="titleFigma boldItalic">
             Testez en avant-premiere le fonctionnement de l’application via un prototype Figma
@@ -538,10 +548,10 @@
 
     <script src="./assets/js/bundle.js"></script>
 
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WBB7MXG"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init()
+    </script>
 
 </body>
 </html>
