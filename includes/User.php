@@ -11,7 +11,7 @@ class User{
     private $weightGoal = NULL;
     // private bool $athletic;
     private $siCoins = NULL;
-    private $idAdmin = NULL;
+    private $isAdmin = NULL;
 
 
     public function getId(){
