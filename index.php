@@ -259,6 +259,7 @@
             )
         )
         );
+        $apiKey = getenv("sendgridKey");
 
         // Configuration de cURL
         curl_setopt_array($curl, array(
@@ -271,7 +272,7 @@
         CURLOPT_CUSTOMREQUEST => "POST",
         CURLOPT_POSTFIELDS => json_encode($data),
         CURLOPT_HTTPHEADER => array(
-            "Authorization: Bearer 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",
+            "Authorization: Bearer {$apiKey}",
             "Content-Type: application/json"
         ),
         ));
@@ -286,10 +287,12 @@
         // Vérification de la réponse de l'API
         if ($err) {
         // Erreur lors de l'envoi de la requête
+        var_dump('error');
         var_dump($err);
         echo "cURL Error #:" . $err;
         } else {
         // Réponse de l'API
+        var_dump('succes');
         var_dump($response);
         echo $response;
         }
