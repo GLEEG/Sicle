@@ -286,9 +286,11 @@
         // Vérification de la réponse de l'API
         if ($err) {
         // Erreur lors de l'envoi de la requête
+        var_dump($err);
         echo "cURL Error #:" . $err;
         } else {
         // Réponse de l'API
+        var_dump($response);
         echo $response;
         }
     }
@@ -299,6 +301,7 @@
             $user = new User($_POST);
 
             $manager->add($user);
+            var_dump($user->getEmail());
             mailing($user->getEmail());
             $succes = "Adresse bien enregistrée vous recevrez un mail dans quelques instants";
         }else{
