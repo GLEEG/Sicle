@@ -287,13 +287,9 @@
         // Vérification de la réponse de l'API
         if ($err) {
         // Erreur lors de l'envoi de la requête
-        var_dump('error');
-        var_dump($err);
         echo "cURL Error #:" . $err;
         } else {
         // Réponse de l'API
-        var_dump('succes');
-        var_dump($response);
         echo $response;
         }
     }
