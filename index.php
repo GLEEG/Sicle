@@ -531,7 +531,7 @@
                 <div class="links">
                     
                     <div class="linkedinLink">
-                        <a class="buttons" href="https://www.linkedin.com/in/ayman-benammou" target="_blank">LinkedIn</a> 
+                        <a class="buttons" href="https://www.linkedin.com/in/ayman-benammour" target="_blank">LinkedIn</a> 
                         <img class="logoLink" src="./assets/images/logoLinkedIn.svg" alt="LinkedIn logo">
                     </div>
 
