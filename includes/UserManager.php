@@ -4,13 +4,13 @@ class UserManager{
 
     public function __construct()
     {
-        $dbName = "t80o0qfns207b2ah";
+        $dbName = getenv("dbName");
         $port = 3306;
-        $username = "c5jacit8b1tibnjh";
-        $password = "un90lh763p3xub0w";
+        $username = getenv("dbUser");
+        $password = getenv("dbPass");
+        $host = getenv("dbHost");
         try{
-            $this->setDb(new PDO("mysql:host=ilzyz0heng1bygi8.chr7pe7iynqr.eu-west-1.rds.amazonaws.com;dbname=$dbName;port=$port;charset=utf8mb4",$username,$password));
-            // $this->setDb(new PDO("mysql://c5jacit8b1tibnjh:un90lh763p3xub0w@ilzyz0heng1bygi8.chr7pe7iynqr.eu-west-1.rds.amazonaws.com:3306/t80o0qfns207b2ah"));
+            $this->setDb(new PDO("mysql:host=$host;dbname=$dbName;port=$port;charset=utf8mb4",$username,$password));
         }catch(PDOException $error){
             echo $error->getMessage();
         }
