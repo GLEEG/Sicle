@@ -357,12 +357,12 @@
 
         <!-- Header -->
         <div class="header centered">
-            <div class="logo boldItalic">Sicle</div>
+            <a href="./index.php" class="logo">Sicle</a>
 
             <div class="headerButtons">
-                <a href="#sicleDefinitionAnchor" class="buttons">A propos</a>
-                <a href="#promotionalVideoAnchor" class="buttons">Vidéo promotionnelle</a>
-                <a href="#previewExperienceAnchor" class="buttons">Experience</a>
+                <a href="#sicleDefinitionAnchor" class="buttons">Notre histoire</a>
+                <a href="#promotionalVideoAnchor" class="buttons">Teaser</a>
+                <a href="#previewExperienceAnchor" class="buttons">Preview experience</a>
                 <a href="#teamAnchor" class="buttons">L'équipe</a>
                 <a href="#contactAnchor" class="buttons">Contact</a>
             </div>
@@ -494,13 +494,9 @@
     <!-- Promotional video -->
     <div data-aos="fade-up" id="promotionalVideoAnchor" class="thirdBlock centered">
 
-        <div class="title boldItalic">
-            VIDÉO PROMOTIONNELLE
-        </div>
+        <div class="title boldItalic">TEASER</div>
 
-        <div class="youtubeVideo">
-            <!-- <video src="#"></video> -->
-        </div>
+        <iframe loading="lazy" width="100%" height="auto" src="https://www.youtube.com/embed/_4Iq32DBYT8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     </div>
 
@@ -519,7 +515,7 @@
             <p>Cette expérience vous offrira une meilleure compréhension de ce que nous proposons 🤝</p>
         </div>
 
-        <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FMie8JSDdfTnp2CHjPlyYZr%2FAPPLI-MOBILE---SICLE-%25F0%259F%2593%25B1%3Fpage-id%3D424%253A1415%26node-id%3D424%253A1416%26viewport%3D947%252C318%252C0.27%26scaling%3Dscale-down%26starting-point-node-id%3D526%253A2627" allowfullscreen></iframe>
+        <iframe loading="lazy" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FMie8JSDdfTnp2CHjPlyYZr%2FAPPLI-MOBILE---SICLE-%25F0%259F%2593%25B1%3Fpage-id%3D424%253A1415%26node-id%3D424%253A1416%26viewport%3D947%252C318%252C0.27%26scaling%3Dscale-down%26starting-point-node-id%3D526%253A2627" allowfullscreen></iframe>
 
     </div>
 
@@ -620,7 +616,7 @@
                             <input type="email" placeholder="Email" name="email" id="email">
                         </div>
                         
-                        <div class="checkbox">
+                        <div class="checkbox boldItalic">
                             <input type="checkbox" name="completeSubscription" id="completeSubscription">
                             <label for="completeSubscription">Voulez vous pré-inscrire ?</label>
                         </div>
@@ -630,30 +626,26 @@
                     <div class="personnalInfo hidden">
 
                         <input class="inputStyle"type="text" name="username" id="username" placeholder="Nom d'utilisateur">
-                        <input class="inputStyle"type="number" name="weight" id="weight" max=200 min=30 step="0.01" placeholder="Poids">
-                        <input class="inputStyle"type="number" name="height" id="height" max=300 min=100 placeholder="Taille (cm)">
-                        <input class="inputStyle"type="number" name="age" id="age" max=99 min=12 placeholder="Age">
+                        <input class="inputStyle" type="number" name="weight" id="weight" max=200 min=30 step="0.01" placeholder="Poids (en kg)">
+                        <input class="inputStyle" type="number" name="height" id="height" max=300 min=100 placeholder="Taille (en cm)">
+                        <input class="inputStyle" type="number" name="age" id="age" max=99 min=12 placeholder="Age">
 
-                        <select class="selectStyle"name="gender" id="gender">
+                        <select class="selectStyle" name="gender" id="gender">
                             <option value="male">Homme</option>
                             <option value="female">Femme</option>
                         </select>
 
                 </div>
                 </div>
-                
 
                 <div class="goal hidden">
-                    <input type="number" name="weightGoal" id="weightGoal" step="0.01" placeholder="Votre objectif de poids">
+                    <input type="number" name="weightGoal" id="weightGoal" step="0.01" placeholder="Votre objectif de poids (en kg)">
                 </div>
 
-
-                
-
                 <div class="btns">
-                    <button class="btn next invisible">Suivant <img class="imgButton" src="./assets/images/rightArrow.png" alt=""></button>
-                    <button class="btn prev invisible">Precédent <img src="./assets/images/leftArrow.png" alt=""></button>
-                    <input type="submit" value="Valider" class="submit invisible">
+                    <button class="boldItalic btn next invisible">Suivant <img class="imgButton" src="./assets/images/rightArrow.png" alt=""></button>
+                    <button class="boldItalic btn prev invisible">Precédent <img src="./assets/images/leftArrow.png" alt=""></button>
+                    <input type="submit" value="Valider" class="boldItalic submit invisible">
                 </div>
 
                 <input type="submit" value="Valider" class="contactButton">
@@ -703,6 +695,7 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init()
+        console.log('FINI')
     </script>
 
 </body>
