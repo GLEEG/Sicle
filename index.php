@@ -354,6 +354,11 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
+    <div class="loadScreen">
+        <div class="spinner rounded-circle"></div>
+        <h3 class="loadingTitle">Chargement...</h3>
+    </div>
+
     <!-- Landing page -->
     <div class="landingPageAll">
 
@@ -695,10 +700,7 @@
     <script src="./assets/js/bundle.js"></script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init()
-        console.log('FINI')
-    </script>
+    <script>AOS.init()</script>
 
 </body>
 </html>

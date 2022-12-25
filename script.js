@@ -229,3 +229,8 @@ const tick = () =>
 }
 
 tick()
+
+window.addEventListener('load', () => {
+    document.querySelector('body').style.background = "#ff0000"
+    console.log('bon')
+});
