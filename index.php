@@ -354,6 +354,11 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
+    <div class="loadScreen">
+        <div class="spinner rounded-circle"></div>
+        <h3 class="loadingTitle">Chargement...</h3>
+    </div>
+
     <!-- Landing page -->
     <div class="landingPageAll">
 
@@ -498,7 +503,7 @@
 
         <div class="title boldItalic">TEASER</div>
 
-        <iframe loading="lazy" width="100%" height="auto" src="https://www.youtube.com/embed/_4Iq32DBYT8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/_4Iq32DBYT8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     </div>
 
@@ -517,7 +522,7 @@
             <p>Cette expérience vous offrira une meilleure compréhension de ce que nous proposons 🤝</p>
         </div>
 
-        <iframe loading="lazy" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FMie8JSDdfTnp2CHjPlyYZr%2FAPPLI-MOBILE---SICLE-%25F0%259F%2593%25B1%3Fpage-id%3D424%253A1415%26node-id%3D424%253A1416%26viewport%3D947%252C318%252C0.27%26scaling%3Dscale-down%26starting-point-node-id%3D526%253A2627" allowfullscreen></iframe>
+        <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FMie8JSDdfTnp2CHjPlyYZr%2FAPPLI-MOBILE---SICLE-%25F0%259F%2593%25B1%3Fpage-id%3D424%253A1415%26node-id%3D424%253A1416%26viewport%3D947%252C318%252C0.27%26scaling%3Dscale-down%26starting-point-node-id%3D526%253A2627" allowfullscreen></iframe>
 
     </div>
 
@@ -695,10 +700,7 @@
     <script src="./assets/js/bundle.js"></script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init()
-        console.log('FINI')
-    </script>
+    <script>AOS.init()</script>
 
 </body>
 </html>

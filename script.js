@@ -229,3 +229,16 @@ const tick = () =>
 }
 
 tick()
+
+const loadScreenElement = document.querySelector('.loadScreen')
+const bodyElement = document.querySelector('body')
+
+window.addEventListener('load', () => 
+{
+    loadScreenElement.style.opacity = "0"
+    bodyElement.style.overflowY = "auto"
+
+    setTimeout(() => {
+        loadScreenElement.style.display = "none"
+    }, 1000);
+})
