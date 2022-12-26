@@ -230,7 +230,15 @@ const tick = () =>
 
 tick()
 
-window.addEventListener('load', () => {
-    document.querySelector('body').style.background = "#ff0000"
-    console.log('bon')
-});
+const loadScreenElement = document.querySelector('.loadScreen')
+const bodyElement = document.querySelector('body')
+
+window.addEventListener('load', () => 
+{
+    loadScreenElement.style.opacity = "0"
+    bodyElement.style.overflowY = "auto"
+
+    setTimeout(() => {
+        loadScreenElement.style.display = "none"
+    }, 1000);
+})

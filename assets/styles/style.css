@@ -46,13 +46,33 @@
 @keyframes rightMarquee {
     from { transform: translateX(0); }
     to { transform: translateX(-50%); }
-  }
+}
 
-  @keyframes leftMarquee {
+@keyframes leftMarquee {
     from { transform: translateX(-50%); }
     to { transform: translateX(0); }
-  }
+}
 
+/* SCROLL BAR */
+::-webkit-scrollbar
+{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track
+{
+    background: #424242;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: #686868;
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+    background: #7b7b7b; 
+}
 
 /* General */
 body{
@@ -63,6 +83,8 @@ body{
     justify-content: center;
     gap: 128px;
     overflow-x: hidden;
+    overflow-y: hidden;
+    color: #272F38;
 }
 
 a{
@@ -825,6 +847,7 @@ iframe{
 {
     position: fixed;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     top: 0px;
@@ -832,6 +855,8 @@ iframe{
     height: 100vh;
     z-index: 10;
     background: #272F38;
+    gap: 32px;
+    transition: opacity 1s ease-out;
 }
 
 @keyframes Rotate {
@@ -850,4 +875,12 @@ iframe{
     border-top-color: #ffffff;
     border-radius: 100px;
     animation: Rotate 1.5s linear infinite;
+}
+
+.loadingTitle
+{
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
 }
